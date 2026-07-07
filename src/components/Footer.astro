@@ -1,0 +1,125 @@
+---
+// Footer Component
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Birds</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Tours</a></li>
+          <li><a href="#">Reports</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="#guide-program">Guide Program</a></li>
+          <li><a href="#">Tour Reports</a></li>
+          <li><a href="mailto:guides@followbirds.com">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>App</h4>
+        <ul>
+          <li><a href="https://app.followbirds.com" target="_blank">Web App</a></li>
+          <li><a href="#" title="Coming to Google Play">Android</a></li>
+          <li><a href="#" title="Coming to App Store">iPhone</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-tagline">
+        🦅 Birdwatching tours, observations and reports for Algarve.
+      </p>
+      <p class="footer-copyright">
+        © 2024 FollowBirds. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4rem 0 2rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-column h4 {
+    color: #1b5e20;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .footer-column ul {
+    list-style: none;
+  }
+
+  .footer-column li {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-column a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+
+  .footer-column a:hover {
+    color: #1b5e20;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-tagline {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 3rem 0 2rem;
+    }
+
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+</style>

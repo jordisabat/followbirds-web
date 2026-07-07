@@ -1,0 +1,222 @@
+---
+// Example Tour Report Section
+---
+
+<section id="tour-report" class="example-tour-report section">
+  <div class="container">
+    <h2>Every tour becomes a beautiful report.</h2>
+    <p class="section-subtitle">
+      After each tour, FollowBirds turns observations, photos and route details into a shareable memory for every participant.
+    </p>
+
+    <div class="report-grid">
+      <div class="report-preview">
+        <div class="report-mock">
+          <div class="report-header">
+            <h3>🦅 Ria Formosa Tour Report</h3>
+            <p class="report-meta">May 15, 2024 • Guide: João Silva • 8 participants</p>
+          </div>
+
+          <div class="report-section">
+            <h4>Species Observed</h4>
+            <div class="species-list">
+              <span class="species-badge">Booted Eagle</span>
+              <span class="species-badge">Kentish Plover</span>
+              <span class="species-badge">Greater Flamingo</span>
+              <span class="species-badge">European Bee-eater</span>
+              <span class="species-badge">Audouin's Gull</span>
+              <span class="species-badge">Marsh Harrier</span>
+            </div>
+          </div>
+
+          <div class="report-section">
+            <h4>Tour Timeline</h4>
+            <div class="report-timeline">
+              <div class="report-observation">
+                <span class="obs-time">08:42</span>
+                <span class="obs-species">Booted Eagle</span>
+                <span class="obs-note">Great views at reference point 1</span>
+              </div>
+              <div class="report-observation">
+                <span class="obs-time">09:10</span>
+                <span class="obs-species">Kentish Plover</span>
+                <span class="obs-note">Family of 4 by the shore</span>
+              </div>
+              <div class="report-observation">
+                <span class="obs-time">10:20</span>
+                <span class="obs-species">European Bee-eater</span>
+                <span class="obs-note">Stunning colors and behavior</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-outputs">
+            <p>📄 Generate: <strong>Web Report</strong> • <strong>PDF</strong> • <strong>Shareable Link</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="report-features">
+        <h3>Report Includes</h3>
+        <ul class="report-checklist">
+          <li>✓ Tour information & guide details</li>
+          <li>✓ Complete participant list</li>
+          <li>✓ Species timeline with observations</li>
+          <li>✓ Photos and notes</li>
+          <li>✓ Route map and locations</li>
+          <li>✓ Shareable web link</li>
+          <li>✓ PDF download for offline access</li>
+          <li>✓ Personal archive for birdwatchers</li>
+        </ul>
+
+        <div class="report-cta">
+          <a href="#" class="btn btn-secondary" title="TODO: Link to example report">
+            View Example Report
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .example-tour-report {
+    background-color: #fff;
+  }
+
+  .example-tour-report h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .report-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .report-mock {
+    background: #faf9f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .report-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #1b5e20;
+  }
+
+  .report-header h3 {
+    color: #1b5e20;
+    margin-bottom: 0.5rem;
+  }
+
+  .report-meta {
+    font-size: 0.85rem;
+    color: #999;
+  }
+
+  .report-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .report-section h4 {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .species-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .species-badge {
+    background: #e8f5e9;
+    color: #1b5e20;
+    padding: 0.35rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .report-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .report-observation {
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border-left: 3px solid #1b5e20;
+  }
+
+  .obs-time {
+    font-weight: 700;
+    color: #1b5e20;
+    min-width: 50px;
+  }
+
+  .obs-species {
+    font-weight: 600;
+    color: #333;
+    flex: 1;
+  }
+
+  .obs-note {
+    font-size: 0.85rem;
+    color: #999;
+  }
+
+  .report-outputs {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .report-features h3 {
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+  }
+
+  .report-checklist {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+  .report-checklist li {
+    padding: 0.5rem 0;
+    color: #555;
+  }
+
+  .report-cta {
+    text-align: center;
+  }
+
+  @media (max-width: 968px) {
+    .report-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

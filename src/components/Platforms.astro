@@ -1,0 +1,112 @@
+---
+// Platforms Section
+---
+
+<section class="platforms section">
+  <div class="container">
+    <h2>FollowBirds everywhere.</h2>
+    <p class="section-subtitle">
+      Access FollowBirds on all your devices.
+    </p>
+
+    <div class="platforms-grid">
+      <div class="platform-card">
+        <div class="platform-icon">🌐</div>
+        <h3>Web</h3>
+        <p>Access FollowBirds directly in your browser.</p>
+        <a href="https://app.followbirds.com" class="btn btn-secondary" target="_blank">Open Web App</a>
+      </div>
+
+      <div class="platform-card">
+        <div class="platform-icon">🤖</div>
+        <h3>Android</h3>
+        <p>Full-featured mobile app for Android devices.</p>
+        <!-- TODO: Add final Google Play Store URL -->
+        <a href="#" class="btn btn-secondary" title="Coming to Google Play Store">Download App</a>
+      </div>
+
+      <div class="platform-card">
+        <div class="platform-icon">🍎</div>
+        <h3>iPhone</h3>
+        <p>Full-featured mobile app for iOS devices.</p>
+        <!-- TODO: Add final App Store URL -->
+        <a href="#" class="btn btn-secondary" title="Coming to App Store">Download App</a>
+      </div>
+
+      <div class="platform-card">
+        <div class="platform-icon">📱</div>
+        <h3>Tablet</h3>
+        <p>Optimized experience on iPad and Android tablets.</p>
+        <a href="https://app.followbirds.com" class="btn btn-secondary" target="_blank">Try on Tablet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .platforms {
+    background-color: #faf9f7;
+  }
+
+  .platforms h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+
+  .platform-card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .platform-card:hover {
+    border-color: #1b5e20;
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.1);
+  }
+
+  .platform-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .platform-card h3 {
+    color: #1b5e20;
+    margin-bottom: 0.75rem;
+  }
+
+  .platform-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .platform-card .btn {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .platforms-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

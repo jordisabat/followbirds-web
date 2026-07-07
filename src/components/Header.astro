@@ -1,0 +1,102 @@
+---
+// Header Navigation Component
+---
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="/">
+          <span class="logo-icon">🦅</span>
+          <span class="logo-text">FollowBirds</span>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#for-guides">For guides</a></li>
+        <li><a href="#tour-report">Reports</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-ctas">
+        <a href="#guide-program" class="btn btn-primary">Become a Guide</a>
+        <a href="https://app.followbirds.com" class="btn btn-secondary" target="_blank">
+          Open Web App
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+
+  .logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+  }
+
+  .logo-icon {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    list-style: none;
+    gap: 2rem;
+    flex: 1;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    color: #1b5e20;
+  }
+
+  .nav-ctas {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-ctas .btn-secondary {
+      display: inline-block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-ctas .btn-secondary {
+      display: none;
+    }
+  }
+</style>
