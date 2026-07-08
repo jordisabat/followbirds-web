@@ -5,9 +5,9 @@
 <section class="hero section">
   <div class="container">
     <div class="hero-content">
-      <h1>Birdwatching tours, live checklists and beautiful reports.</h1>
+      <h1>Run better tours. Create lasting memories.</h1>
       <p class="hero-subtitle">
-        Build seamless tour experiences. Share live observations. Generate professional reports your clients will treasure.
+        FollowBirds helps Algarve guides share live observations with participants and generate beautiful reports they'll treasure forever.
       </p>
 
       <div class="hero-ctas">
@@ -20,21 +20,43 @@
     </div>
 
     <div class="hero-visual">
-      <!-- TODO: Add hero image mockup - birding app screenshot or Algarve nature scene -->
-      <div class="placeholder-mockup">
-        <div class="mockup-content">
-          <div class="mockup-header">
-            <div class="mockup-circle"></div>
-            <div class="mockup-circle"></div>
-            <div class="mockup-circle"></div>
+      <!-- TODO: Replace with real report screenshot -->
+      <div class="report-preview">
+        <div class="report-header-mock">
+          <div class="report-title">Ria Formosa Tour</div>
+          <div class="report-meta">João Silva • 8 participants</div>
+        </div>
+
+        <div class="report-section-mock">
+          <div class="report-label">Species Sighted</div>
+          <div class="species-chips">
+            <span class="chip">🦅 Booted Eagle</span>
+            <span class="chip">🦆 Greater Flamingo</span>
+            <span class="chip">🐝 Bee-eater</span>
+            <span class="chip">🦅 Audouin's Gull</span>
           </div>
-          <div class="mockup-line"></div>
-          <div class="mockup-line short"></div>
-          <div class="mockup-list">
-            <div class="mockup-item">🦅 Booted Eagle</div>
-            <div class="mockup-item">🦆 Greater Flamingo</div>
-            <div class="mockup-item">🦅 European Bee-eater</div>
+        </div>
+
+        <div class="report-section-mock">
+          <div class="report-label">Timeline</div>
+          <div class="timeline-mock">
+            <div class="timeline-entry">
+              <span class="time">08:42</span>
+              <span class="species">Booted Eagle</span>
+            </div>
+            <div class="timeline-entry">
+              <span class="time">09:45</span>
+              <span class="species">Greater Flamingo</span>
+            </div>
+            <div class="timeline-entry">
+              <span class="time">10:20</span>
+              <span class="species">European Bee-eater</span>
+            </div>
           </div>
+        </div>
+
+        <div class="report-footer-mock">
+          📊 Web Report • 📄 PDF • 🔗 Shareable
         </div>
       </div>
     </div>
@@ -101,59 +123,93 @@
     flex: 1;
   }
 
-  .placeholder-mockup {
-    background: linear-gradient(135deg, #F7F3E8 0%, #fff 100%);
-    border-radius: 1.5rem;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .report-preview {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F9F7F3 100%);
+    border-radius: 1.25rem;
     border: 1px solid #E8DFD3;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   }
 
-  .mockup-content {
-    width: 85%;
-    padding: 1.5rem;
+  .report-header-mock {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid #2F7D32;
   }
 
-  .mockup-header {
-    display: flex;
-    gap: 0.5rem;
+  .report-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #142016;
+    margin-bottom: 0.25rem;
+  }
+
+  .report-meta {
+    font-size: 0.85rem;
+    color: #999;
+  }
+
+  .report-section-mock {
     margin-bottom: 1.5rem;
   }
 
-  .mockup-circle {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: #ccc;
-  }
-
-  .mockup-line {
-    height: 0.75rem;
-    background: #e0e0e0;
-    border-radius: 0.25rem;
+  .report-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2F7D32;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
     margin-bottom: 0.75rem;
   }
 
-  .mockup-line.short {
-    width: 60%;
-    margin-bottom: 1.5rem;
+  .species-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
-  .mockup-list {
+  .chip {
+    background: #EAF3E5;
+    color: #2F7D32;
+    padding: 0.45rem 0.85rem;
+    border-radius: 0.55rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    display: inline-block;
+  }
+
+  .timeline-mock {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.6rem;
   }
 
-  .mockup-item {
-    background: #e8f5e9;
-    color: #2F7D32;
-    padding: 0.5rem 0.75rem;
+  .timeline-entry {
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0.85rem;
+    background: #FAF7EF;
+    border-left: 3px solid #2F7D32;
     border-radius: 0.4rem;
     font-size: 0.85rem;
+  }
+
+  .time {
+    font-weight: 700;
+    color: #2F7D32;
+    min-width: 50px;
+  }
+
+  .species {
+    color: #142016;
+  }
+
+  .report-footer-mock {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #E8DFD3;
+    font-size: 0.85rem;
+    color: #5E6B60;
     font-weight: 500;
   }
 
@@ -161,10 +217,6 @@
     .hero .container {
       grid-template-columns: 1fr;
       gap: 2.5rem;
-    }
-
-    .placeholder-mockup {
-      aspect-ratio: 16/9;
     }
   }
 
@@ -193,8 +245,13 @@
       text-align: center;
     }
 
-    .placeholder-mockup {
-      aspect-ratio: 16/9;
+    .report-preview {
+      padding: 1.5rem;
+    }
+
+    .report-header-mock {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
     }
   }
 </style>
