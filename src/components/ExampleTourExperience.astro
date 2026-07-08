@@ -84,40 +84,47 @@
 
 <style>
   .example-tour-experience {
-    background: linear-gradient(135deg, #faf9f7 0%, #f0ede8 100%);
+    background: linear-gradient(135deg, #FAF7EF 0%, #EAF3E5 100%);
   }
 
   .example-tour-experience h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .section-subtitle {
     text-align: center;
-    font-size: 1.125rem;
-    color: #666;
-    margin-bottom: 3rem;
-    max-width: 600px;
+    font-size: 1.1rem;
+    color: #5E6B60;
+    margin-bottom: 3.5rem;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .tour-experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 2rem;
   }
 
   .experience-card {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 1px solid #e0e0e0;
+    background: #FFFFFF;
+    padding: 2.25rem;
+    border-radius: 0.85rem;
+    border: 1px solid #E8DFD3;
+    transition: all 0.3s ease;
+  }
+
+  .experience-card:hover {
+    border-color: #2F7D32;
+    box-shadow: 0 6px 16px rgba(47, 125, 50, 0.08);
   }
 
   .experience-card h3 {
     margin-bottom: 1.5rem;
-    color: #1b5e20;
+    color: #2F7D32;
+    font-size: 1.1rem;
   }
 
   .timeline-item {
@@ -133,12 +140,14 @@
 
   .time {
     font-weight: 700;
-    color: #1b5e20;
+    color: #2F7D32;
     min-width: 60px;
+    font-size: 0.9rem;
   }
 
   .species {
-    color: #333;
+    color: #142016;
+    font-size: 0.9rem;
   }
 
   .checklist-item {
@@ -158,12 +167,13 @@
   .checklist-item label {
     cursor: pointer;
     flex: 1;
-    color: #333;
+    color: #142016;
+    font-size: 0.9rem;
   }
 
   .checklist-item .mark {
-    font-size: 0.85rem;
-    color: #1b5e20;
+    font-size: 0.8rem;
+    color: #2F7D32;
     font-weight: 500;
   }
 
@@ -181,12 +191,13 @@
 
   .info-row .label {
     font-weight: 600;
-    color: #1b5e20;
-    font-size: 0.95rem;
+    color: #2F7D32;
+    font-size: 0.9rem;
   }
 
   .info-row span:not(.label) {
-    color: #666;
+    color: #5E6B60;
+    font-size: 0.9rem;
   }
 
   @media (max-width: 768px) {

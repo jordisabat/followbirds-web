@@ -21,8 +21,8 @@
 
       <div class="nav-ctas">
         <a href="#guide-program" class="btn btn-primary">Become a Guide</a>
-        <a href="https://followbirdsapp.web.app" class="btn btn-secondary" target="_blank">
-          Open Web App
+        <a href="https://followbirdsapp.web.app" class="nav-link-secondary" target="_blank">
+          Web App
         </a>
       </div>
     </nav>
@@ -32,7 +32,7 @@
 <style>
   .header {
     background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #f0f0f0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0.9rem 0;
     gap: 2rem;
   }
 
@@ -53,7 +53,7 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 1.25rem;
-    color: #1a1a1a;
+    color: #142016;
   }
 
   .logo-icon {
@@ -63,25 +63,38 @@
   .nav-links {
     display: none;
     list-style: none;
-    gap: 2rem;
+    gap: 2.5rem;
     flex: 1;
   }
 
   .nav-links a {
     text-decoration: none;
-    color: #1a1a1a;
+    color: #5E6B60;
     font-weight: 500;
+    font-size: 0.95rem;
     transition: color 0.2s ease;
   }
 
   .nav-links a:hover {
-    color: #1b5e20;
+    color: #2F7D32;
   }
 
   .nav-ctas {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     align-items: center;
+  }
+
+  .nav-link-secondary {
+    text-decoration: none;
+    color: #5E6B60;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+  }
+
+  .nav-link-secondary:hover {
+    color: #2F7D32;
   }
 
   @media (min-width: 768px) {
@@ -89,14 +102,23 @@
       display: flex;
     }
 
-    .nav-ctas .btn-secondary {
-      display: inline-block;
+    .nav-link-secondary {
+      display: inline;
     }
   }
 
   @media (max-width: 768px) {
-    .nav-ctas .btn-secondary {
+    .nav-link-secondary {
       display: none;
+    }
+
+    .nav-ctas {
+      gap: 0.75rem;
+    }
+
+    .nav-ctas .btn {
+      padding: 0.75rem 1.25rem;
+      font-size: 0.9rem;
     }
   }
 </style>

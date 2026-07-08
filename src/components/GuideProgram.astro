@@ -45,39 +45,44 @@
 
 <style>
   .guide-program {
-    background: linear-gradient(135deg, #1b5e20 0%, #0d3616 100%);
+    background: linear-gradient(135deg, #2F7D32 0%, #1b5e20 100%);
     color: #fff;
   }
 
   .guide-program h2 {
     text-align: center;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .section-subtitle {
     text-align: center;
-    font-size: 1.125rem;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 3rem;
-    max-width: 600px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 3.5rem;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .program-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
 
   .benefit-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 2.25rem;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
+  }
+
+  .benefit-card:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.3);
   }
 
   .benefit-icon {
@@ -108,11 +113,11 @@
 
   .program-cta .btn {
     background-color: #fff;
-    color: #1b5e20;
+    color: #2F7D32;
   }
 
   .program-cta .btn:hover {
-    background-color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   @media (max-width: 768px) {
