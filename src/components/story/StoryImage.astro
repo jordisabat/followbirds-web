@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import type { StoryStepContent } from '../../content/story.types';
+
+import home from '../../assets/story/phone/home.png';
+import birds from '../../assets/story/phone/birds.png';
+import birdDetail from '../../assets/story/phone/bird-detail.png';
+import locationsMap from '../../assets/story/phone/locations-map.png';
+import locationDetail from '../../assets/story/phone/location-detail.png';
+import checklists from '../../assets/story/phone/checklists.png';
+
+interface Props {
+  step: StoryStepContent;
+}
+
+const { step } = Astro.props;
+
+const imageMap: Record<string, any> = {
+  discover: home,
+  birds: birds,
+  'bird-detail': birdDetail,
+  locations: locationsMap,
+  'location-detail': locationDetail,
+  'personal-checklist': checklists,
+};
+
+const imageSrc = imageMap[step.id];
+---
+
+{imageSrc ? (
+  <Image
+    src={imageSrc}
+    alt={step.screenshot.alt}
+    class="story-device-screen"
+    data-step-id={step.id}
+    loading="lazy"
+    width={390}
+    height={844}
+  />
+) : (
+  <div
+    class="story-device-screen"
+    data-step-id={step.id}
+    style="background-color: #555;"
+  ></div>
+)}

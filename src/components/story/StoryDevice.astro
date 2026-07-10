@@ -1,0 +1,17 @@
+---
+import type { StoryStepContent } from '../../content/story.types';
+import StoryImage from './StoryImage.astro';
+
+interface Props {
+  steps: StoryStepContent[];
+}
+const { steps } = Astro.props;
+---
+<div class="story-device" id="story-device">
+  <div class="story-device-frame">
+    {steps.map(step => (
+      <StoryImage step={step} />
+    ))}
+  </div>
+  <div class="story-device-notch"></div>
+</div>

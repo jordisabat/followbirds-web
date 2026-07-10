@@ -1,0 +1,28 @@
+---
+import type { StoryStepContent } from '../../content/story.types';
+
+interface Props {
+  step: StoryStepContent;
+}
+const { step } = Astro.props;
+const isWelcome = step.id === 'welcome';
+---
+<section class:list={["story-step", { "is-welcome": isWelcome }]} data-step-id={step.id}>
+  <div class="story-step-content">
+    {step.logo && (
+      <div class="story-step-logo">
+        <img src="/favicon.svg" alt="FollowBirds Logo" />
+        <span class="story-step-logo-text">FollowBirds</span>
+      </div>
+    )}
+    {step.headline && <h2>{step.headline}</h2>}
+    {step.text && <p>{step.text}</p>}
+  </div>
+
+  {step.scrollIndicator && (
+    <div class="story-scroll-indicator">
+      <span>Scroll to discover</span>
+      <div class="arrow">↓</div>
+    </div>
+  )}
+</section>
