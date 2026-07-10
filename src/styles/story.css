@@ -168,20 +168,6 @@
 }
 
 /* === Responsive === */
-@media (max-width: 900px) {
-  .story-experience {
-    grid-template-columns: 1fr;
-  }
-  .story-device-panel {
-    display: none; /* Hide sticky phone on mobile for simplicity */
-  }
-  .story-step {
-    padding: 2rem;
-    min-height: 80vh;
-  }
-}
-
-/* === Media Queries for Mobile === */
 @media (max-width: 768px) {
   .story-experience {
     grid-template-columns: 1fr;
@@ -242,5 +228,35 @@
 
   .story-device-frame-mobile {
     display: none;
+  }
+}
+
+/* === Extra Small Devices (Pixel 8a, iPhone SE, etc.) === */
+@media (max-width: 500px) {
+  .story-device-panel {
+    height: 55vh;
+  }
+
+  .story-device {
+    width: 220px;
+    height: 450px;
+  }
+
+  .story-steps-panel {
+    margin-top: 55vh;
+    padding-top: 15vh;
+  }
+
+  .story-step {
+    min-height: 30vh;
+    padding: 2rem 1.5rem;
+  }
+
+  .story-step h2 {
+    font-size: 1.4rem;
+  }
+
+  .story-step p {
+    font-size: 0.85rem;
   }
 }

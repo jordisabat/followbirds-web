@@ -2,11 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import StoryExperience from '../components/story/StoryExperience.astro';
 import { storyContent } from '../content/story';
+import '../styles/story.css';
 ---
 <Layout title="A Story by FollowBirds" a11y={false}>
-  <head>
-    <link rel="stylesheet" href="/src/styles/story.css" />
-  </head>
   <main>
     <StoryExperience steps={storyContent} />
   </main>
