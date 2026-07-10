@@ -1,7 +1,7 @@
 class StoryController {
   private steps: NodeListOf<HTMLElement>;
   private screens: NodeListOf<HTMLElement>;
-  private observer: IntersectionObserver;
+  private observer!: IntersectionObserver;
 
   constructor() {
     this.steps = document.querySelectorAll('[data-step-id]');
