@@ -1,0 +1,212 @@
+---
+// Guide Dashboard Overview Section
+---
+
+<section id="dashboard-overview" class="dashboard-overview section">
+  <div class="container">
+    <div class="dashboard-content">
+      <div class="dashboard-text">
+        <h2>More than Tours, a<br/>Complete Guide<br/>Business Platform</h2>
+        <p class="dashboard-subtitle">
+          FollowBirds helps guides organize tours, manage participants, track observations, and generate professional reports.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">Join the Guide Program</a>
+      </div>
+
+      <div class="dashboard-visual">
+        <div class="dashboard-mockup">
+          <div class="dashboard-header">
+            <div class="dashboard-nav">
+              <div class="nav-item">Dashboard</div>
+              <div class="nav-item">Tours</div>
+              <div class="nav-item">Reports</div>
+              <div class="nav-item">Settings</div>
+            </div>
+          </div>
+          <div class="dashboard-body">
+            <div class="stats-row">
+              <div class="stat-card">
+                <div class="stat-number">128</div>
+                <div class="stat-label">Total Tours</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">842</div>
+                <div class="stat-label">Participants</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">312</div>
+                <div class="stat-label">Species Found</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">65%</div>
+                <div class="stat-label">Return Rate</div>
+              </div>
+            </div>
+            <div class="chart-placeholder">
+              <div style="font-size: 0.9rem; color: #5E6B60; margin-bottom: 0.5rem;">📈 Recent Activity</div>
+              <div style="display: flex; align-items: flex-end; gap: 0.5rem; height: 3rem;">
+                <div style="flex: 1; background: #2F7D32; height: 60%;"></div>
+                <div style="flex: 1; background: #2F7D32; height: 80%;"></div>
+                <div style="flex: 1; background: #2F7D32; height: 40%;"></div>
+                <div style="flex: 1; background: #2F7D32; height: 100%;"></div>
+                <div style="flex: 1; background: #2F7D32; height: 70%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .dashboard-overview {
+    background: linear-gradient(135deg, #FAF7EF 0%, #EAF3E5 100%);
+    padding: 5.5rem 0;
+  }
+
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .dashboard-text h2 {
+    font-size: 2.2rem;
+    color: #142016;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .dashboard-subtitle {
+    font-size: 1.05rem;
+    color: #5E6B60;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .dashboard-visual {
+    position: relative;
+  }
+
+  .dashboard-mockup {
+    background: #1a1a1a;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  }
+
+  .dashboard-header {
+    background: #000;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #333;
+  }
+
+  .dashboard-nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-item {
+    color: #999;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .nav-item:first-child {
+    color: #fff;
+    border-bottom: 2px solid #2F7D32;
+    padding-bottom: 0.5rem;
+  }
+
+  .dashboard-body {
+    padding: 1.5rem;
+    color: #fff;
+  }
+
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stat-card {
+    background: #2a2a2a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid #3a3a3a;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2F7D32;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: #999;
+    font-weight: 500;
+  }
+
+  .chart-placeholder {
+    background: #2a2a2a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #3a3a3a;
+  }
+
+  @media (max-width: 1024px) {
+    .dashboard-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .dashboard-text h2 {
+      font-size: 1.75rem;
+    }
+
+    .stats-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .dashboard-overview {
+      padding: 4rem 0;
+    }
+
+    .dashboard-text h2 {
+      font-size: 1.5rem;
+    }
+
+    .dashboard-subtitle {
+      font-size: 1rem;
+    }
+
+    .stats-row {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .stat-card {
+      padding: 0.75rem;
+    }
+
+    .stat-number {
+      font-size: 1.2rem;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+    }
+
+    .dashboard-body {
+      padding: 1rem;
+    }
+  }
+</style>

@@ -4,7 +4,9 @@
 
 <section id="faq" class="faq section">
   <div class="container">
-    <h2>Frequently asked questions</h2>
+    <div class="section-header">
+      <h2>Frequently asked questions</h2>
+    </div>
 
     <div class="faq-grid">
       <div class="faq-item">
@@ -48,11 +50,18 @@
 <style>
   .faq {
     background-color: #FFFFFF;
+    padding: 5.5rem 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
   }
 
   .faq h2 {
-    text-align: center;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #142016;
+    margin-bottom: 1rem;
   }
 
   .faq-grid {
@@ -62,22 +71,24 @@
   }
 
   .faq-item {
-    padding: 2.25rem;
+    padding: 2rem;
     background: #FAF7EF;
-    border-radius: 0.85rem;
+    border-radius: 1rem;
     border: 1px solid #E8DFD3;
     transition: all 0.3s ease;
   }
 
   .faq-item:hover {
     border-color: #2F7D32;
-    box-shadow: 0 6px 16px rgba(47, 125, 50, 0.08);
+    box-shadow: 0 8px 24px rgba(47, 125, 50, 0.1);
+    transform: translateY(-2px);
   }
 
   .faq-item h3 {
-    color: #2F7D32;
-    margin-bottom: 1rem;
+    color: #142016;
+    margin-bottom: 0.75rem;
     font-size: 1.05rem;
+    font-weight: 600;
   }
 
   .faq-item p {
@@ -87,8 +98,21 @@
   }
 
   @media (max-width: 768px) {
+    .faq {
+      padding: 4rem 0;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+    }
+
+    .faq h2 {
+      font-size: 1.5rem;
+    }
+
     .faq-grid {
       grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
   }
 </style>

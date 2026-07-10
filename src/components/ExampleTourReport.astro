@@ -4,69 +4,63 @@
 
 <section id="reports" class="reports section">
   <div class="container">
-    <h2>Every tour becomes a report.</h2>
-    <p class="section-subtitle">
-      FollowBirds turns live observations into a shareable web/PDF report.
-    </p>
+    <div class="reports-grid">
+      <div class="reports-content">
+        <h2>Every Tour Becomes a<br/>Lasting Record</h2>
+        <p class="reports-subtitle">
+          Automatically generate detailed tour reports with species observed, photos, route data, and participant information.
+        </p>
 
-    <div class="report-grid">
-      <div class="report-preview">
-        <div class="report-mock">
-          <div class="report-header">
-            <h3>🦅 Ria Formosa Tour Report</h3>
-            <p class="report-meta">May 15, 2024 • Guide: João Silva • 8 participants</p>
+        <div class="report-features">
+          <div class="feature-list">
+            <div class="feature">✓ Tour name and date</div>
+            <div class="feature">✓ Species checklist</div>
+            <div class="feature">✓ Bird sighting details</div>
+            <div class="feature">✓ Route information</div>
+            <div class="feature">✓ Participant list</div>
+            <div class="feature">✓ Participant feedback</div>
+            <div class="feature">✓ Weather conditions</div>
           </div>
+        </div>
 
-          <div class="report-section">
-            <h4>Species Observed</h4>
-            <div class="species-list">
-              <span class="species-badge">Booted Eagle</span>
-              <span class="species-badge">Kentish Plover</span>
-              <span class="species-badge">Greater Flamingo</span>
-              <span class="species-badge">European Bee-eater</span>
-            </div>
-          </div>
-
-          <div class="report-section">
-            <h4>Timeline</h4>
-            <div class="report-timeline">
-              <div class="report-observation">
-                <span class="obs-time">08:42</span>
-                <span class="obs-species">Booted Eagle</span>
-              </div>
-              <div class="report-observation">
-                <span class="obs-time">09:10</span>
-                <span class="obs-species">Kentish Plover</span>
-              </div>
-              <div class="report-observation">
-                <span class="obs-time">09:45</span>
-                <span class="obs-species">Greater Flamingo</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="report-outputs">
-            <p>📄 Generate: <strong>Web Report</strong> • <strong>PDF</strong> • <strong>Shareable Link</strong></p>
-          </div>
+        <div class="report-cta">
+          <a href="#" class="btn btn-secondary">View Report Example</a>
         </div>
       </div>
 
-      <div class="report-features">
-        <h3>What's included</h3>
-        <ul class="report-checklist">
-          <li>✓ Tour date and time</li>
-          <li>✓ Guide and participants</li>
-          <li>✓ Hotspot / route</li>
-          <li>✓ Species list</li>
-          <li>✓ Number of birds by species</li>
-          <li>✓ Timeline of observations</li>
-          <li>✓ Photos and notes</li>
-        </ul>
+      <div class="reports-visual">
+        <div class="report-mockup">
+          <div class="tour-map" style="background: linear-gradient(135deg, #C7E0C8 0%, #A6D5A3 100%); height: 200px; border-radius: 0.75rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #2F7D32; font-size: 2rem;">🗺️</div>
+          
+          <div class="report-frame">
+            <div class="report-header-mock">
+              <h3>Rio Formosa – Winter Birds Tour</h3>
+              <p class="report-meta">Report Includes:</p>
+            </div>
 
-        <div class="report-cta">
-          <a href="#" class="btn btn-secondary" title="Example report coming soon">
-            See Example Report
-          </a>
+            <div class="report-section-mock">
+              <div class="section-item">
+                <span class="report-label">📋 Species Observed</span>
+                <span class="report-value">28</span>
+              </div>
+              <div class="section-item">
+                <span class="report-label">📷 Photos Attached</span>
+                <span class="report-value">42</span>
+              </div>
+              <div class="section-item">
+                <span class="report-label">👥 Participants</span>
+                <span class="report-value">8</span>
+              </div>
+              <div class="section-item">
+                <span class="report-label">⭐ Average Rating</span>
+                <span class="report-value">4.9/5</span>
+              </div>
+            </div>
+
+            <div class="report-footer-mock">
+              📄 PDF • 🔗 Web Link • 📧 Email
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -75,143 +69,168 @@
 
 <style>
   .reports {
-    background-color: #FAF7EF;
+    background-color: #fff;
+    padding: 5.5rem 0;
   }
 
-  .reports h2 {
-    text-align: center;
-    margin-bottom: 0.75rem;
-  }
-
-  .section-subtitle {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #5E6B60;
-    margin-bottom: 3.5rem;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .report-grid {
+  .reports-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3.5rem;
-    align-items: start;
+    gap: 4rem;
+    align-items: center;
   }
 
-  .report-mock {
-    background: #FFFFFF;
-    border: 1px solid #E8DFD3;
-    border-radius: 0.85rem;
-    padding: 2rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  }
-
-  .report-header {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid #2F7D32;
-  }
-
-  .report-header h3 {
-    color: #2F7D32;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-  }
-
-  .report-meta {
-    font-size: 0.8rem;
-    color: #999;
-  }
-
-  .report-section {
-    margin-bottom: 1.5rem;
-  }
-
-  .report-section h4 {
+  .reports-content h2 {
+    font-size: 2rem;
     color: #142016;
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
   }
 
-  .species-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  .reports-subtitle {
+    font-size: 1.05rem;
+    color: #5E6B60;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 500px;
   }
 
-  .species-badge {
-    background: #EAF3E5;
-    color: #2F7D32;
-    padding: 0.35rem 0.75rem;
-    border-radius: 0.5rem;
-    font-size: 0.8rem;
-    font-weight: 500;
+  .report-features {
+    margin-bottom: 2.5rem;
   }
 
-  .report-timeline {
+  .feature-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
 
-  .report-observation {
-    display: flex;
-    gap: 1rem;
-    padding: 0.75rem;
-    background: #FAF7EF;
-    border-radius: 0.5rem;
-    border-left: 3px solid #2F7D32;
-  }
-
-  .obs-time {
-    font-weight: 700;
-    color: #2F7D32;
-    min-width: 50px;
-    font-size: 0.85rem;
-  }
-
-  .obs-species {
-    font-weight: 600;
-    color: #142016;
-    flex: 1;
-    font-size: 0.85rem;
-  }
-
-  .report-outputs {
-    text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid #E8DFD3;
-    font-size: 0.9rem;
-    color: #5E6B60;
-  }
-
-  .report-features h3 {
-    margin-bottom: 1.5rem;
-    color: #142016;
-  }
-
-  .report-checklist {
-    list-style: none;
-    margin-bottom: 2rem;
-  }
-
-  .report-checklist li {
-    padding: 0.5rem 0;
+  .feature {
     color: #5E6B60;
     font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .report-cta {
-    text-align: center;
+    text-align: left;
   }
 
-  @media (max-width: 968px) {
-    .report-grid {
+  .reports-visual {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .report-mockup {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .tour-map {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .report-frame {
+    background: #FAF7EF;
+    border: 1px solid #E8DFD3;
+    border-radius: 1rem;
+    padding: 1.75rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .report-header-mock {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid #2F7D32;
+  }
+
+  .report-header-mock h3 {
+    color: #2F7D32;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .report-meta {
+    font-size: 0.8rem;
+    color: #999;
+    margin: 0;
+  }
+
+  .report-section-mock {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .section-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #E8DFD3;
+  }
+
+  .report-label {
+    font-size: 0.85rem;
+    color: #5E6B60;
+    font-weight: 500;
+  }
+
+  .report-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2F7D32;
+  }
+
+  .report-footer-mock {
+    text-align: center;
+    padding-top: 0.75rem;
+    border-top: 1px solid #E8DFD3;
+    font-size: 0.75rem;
+    color: #5E6B60;
+  }
+
+  @media (max-width: 1024px) {
+    .reports-grid {
       grid-template-columns: 1fr;
-      gap: 2.5rem;
+      gap: 3rem;
+    }
+
+    .reports-visual {
+      justify-content: center;
+    }
+
+    .report-mockup {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .reports {
+      padding: 4rem 0;
+    }
+
+    .reports-grid {
+      gap: 2rem;
+    }
+
+    .reports-content h2 {
+      font-size: 1.5rem;
+    }
+
+    .reports-subtitle {
+      font-size: 1rem;
+    }
+
+    .feature-list {
+      gap: 0.6rem;
+    }
+
+    .feature {
+      font-size: 0.9rem;
     }
   }
 </style>

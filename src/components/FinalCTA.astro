@@ -2,41 +2,50 @@
 // Final CTA Section
 ---
 
-<section class="final-cta section">
-  <div class="container">
-    <div class="cta-content">
-      <h2>Ready to transform your tours?</h2>
-      <p>
-        Join the early guide program and start delivering beautiful reports to your clients today. Your birding will never be the same.
-      </p>
-
-      <div class="cta-buttons">
-        <a href="#guide-program" class="btn btn-primary">Become a Guide</a>
-        <a href="https://followbirdsapp.web.app" class="btn btn-secondary-light" target="_blank">
-          Open Web App
-        </a>
-      </div>
+<section class="final-cta">
+  <div class="cta-background"></div>
+  <div class="cta-overlay"></div>
+  <div class="container cta-inner">
+    <h2>Ready for Your Next<br/>Birdwatching Adventure?</h2>
+    <div class="cta-buttons">
+      <a href="https://followbirdsapp.web.app" class="btn btn-white" target="_blank">Open App</a>
+      <a href="#guide-program" class="btn btn-outline-white">Become a Guide</a>
     </div>
   </div>
 </section>
 
 <style>
   .final-cta {
-    background: linear-gradient(135deg, #2F7D32 0%, #1b5e20 100%);
-    color: #fff;
+    position: relative;
+    padding: 7rem 0;
     text-align: center;
+    overflow: hidden;
+  }
+
+  .cta-background {
+    position: absolute;
+    inset: 0;
+    background: url('/cta-flamingos.jpg') center/cover no-repeat,
+                linear-gradient(180deg, #1b5e20 0%, #0d3d0e 100%);
+    z-index: 0;
+  }
+
+  .cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 32, 22, 0.65);
+    z-index: 1;
+  }
+
+  .cta-inner {
+    position: relative;
+    z-index: 2;
   }
 
   .final-cta h2 {
     color: #fff;
-    margin-bottom: 1.5rem;
-  }
-
-  .cta-content p {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 600px;
-    margin: 0 auto 2.5rem;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
   }
 
   .cta-buttons {
@@ -47,36 +56,53 @@
   }
 
   .cta-buttons .btn {
-    min-width: 200px;
+    min-width: 180px;
   }
 
-  .btn-secondary-light {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    border: 2px solid #fff;
+  .btn-white {
+    background: #fff;
+    color: #2F7D32;
+    font-weight: 700;
+    border-radius: 0.65rem;
+    padding: 0.9rem 2rem;
+    text-decoration: none;
     transition: all 0.2s ease;
   }
 
-  .btn-secondary-light:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+  .btn-white:hover {
+    background: #F0F9F0;
+    transform: translateY(-2px);
   }
 
-  .final-cta .btn-primary {
-    background-color: #fff;
-    color: #2F7D32;
+  .btn-outline-white {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.7);
+    font-weight: 600;
+    border-radius: 0.65rem;
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
   }
 
-  .final-cta .btn-primary:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+  .btn-outline-white:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: #fff;
   }
 
   @media (max-width: 768px) {
+    .final-cta {
+      padding: 5rem 0;
+    }
+
     .cta-buttons {
       flex-direction: column;
+      align-items: center;
     }
 
     .cta-buttons .btn {
       width: 100%;
+      max-width: 320px;
     }
   }
 </style>

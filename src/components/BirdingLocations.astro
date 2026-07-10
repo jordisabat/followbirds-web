@@ -1,0 +1,155 @@
+---
+// Explore Birding Locations Section
+---
+
+<section id="birding-locations" class="birding-locations section">
+  <div class="container">
+    <div class="location-content">
+      <div class="location-text">
+        <h2>Discover Algarve's Best<br/>Birding Locations</h2>
+        <p class="location-subtitle">
+          Explore curated birdwatching hotspots, observation points, and suggested tracks throughout Algarve. Find the best locations to spot specific species.
+        </p>
+        <a href="#" class="btn btn-secondary btn-lg">Explore Locations</a>
+      </div>
+
+      <div class="location-map">
+        <div class="map-placeholder">
+          <div class="map-header">
+            <div style="font-weight: 600; margin-bottom: 1rem;">Birding Hotspots</div>
+            <div style="font-size: 0.9rem; color: #5E6B60; margin-bottom: 0.5rem;">✓ Suggested Tracks</div>
+            <div style="font-size: 0.9rem; color: #5E6B60; margin-bottom: 0.5rem;">◆ Observation Points</div>
+            <div style="font-size: 0.9rem; color: #5E6B60;">◈ Seasonal Locations</div>
+          </div>
+          <div class="map-grid">
+            <div class="map-marker marker-1" title="Location 1">📍</div>
+            <div class="map-marker marker-2" title="Location 2">✓</div>
+            <div class="map-marker marker-3" title="Location 3">◆</div>
+            <div class="map-marker marker-4" title="Location 4">◈</div>
+            <div class="map-marker marker-5" title="Location 5">📍</div>
+            <div class="map-marker marker-6" title="Location 6">✓</div>
+            <div class="map-marker marker-7" title="Location 7">◆</div>
+            <div class="map-marker marker-8" title="Location 8">📍</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .birding-locations {
+    background: linear-gradient(135deg, #EAF3E5 0%, #FAF7EF 100%);
+    padding: 5.5rem 0;
+  }
+
+  .location-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .location-text h2 {
+    font-size: 2.2rem;
+    color: #142016;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .location-subtitle {
+    font-size: 1.05rem;
+    color: #5E6B60;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .location-map {
+    position: relative;
+  }
+
+  .map-placeholder {
+    background: #fff;
+    border: 2px solid #E8DFD3;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E8DFD3;
+  }
+
+  .map-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .map-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAF7EF;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .map-marker:hover {
+    background: #EAF3E5;
+    border-color: #2F7D32;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 1024px) {
+    .location-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .location-text h2 {
+      font-size: 1.75rem;
+    }
+
+    .map-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .birding-locations {
+      padding: 4rem 0;
+    }
+
+    .location-text h2 {
+      font-size: 1.5rem;
+    }
+
+    .location-subtitle {
+      font-size: 1rem;
+    }
+
+    .map-placeholder {
+      padding: 1rem;
+    }
+
+    .map-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .map-marker {
+      font-size: 1.2rem;
+    }
+  }
+</style>

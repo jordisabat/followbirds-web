@@ -4,10 +4,12 @@
 
 <section id="for-birdwatchers" class="for-birdwatchers section">
   <div class="container">
-    <h2>For birdwatchers, every sighting stays saved.</h2>
-    <p class="section-subtitle">
-      Join a guided tour, follow the shared checklist and keep your personal birding history.
-    </p>
+    <div class="section-header">
+      <h2>For birdwatchers, every sighting stays saved.</h2>
+      <p class="section-subtitle">
+        Join a guided tour, follow the shared checklist and keep your personal birding history.
+      </p>
+    </div>
 
     <div class="features">
       <div class="feature-card">
@@ -38,34 +40,41 @@
 <style>
   .for-birdwatchers {
     background-color: #FFFFFF;
+    padding: 5.5rem 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
   }
 
   .for-birdwatchers h2 {
-    text-align: center;
-    margin-bottom: 0.75rem;
+    font-size: 2rem;
+    color: #142016;
+    margin-bottom: 1rem;
   }
 
   .section-subtitle {
-    text-align: center;
     font-size: 1.1rem;
     color: #5E6B60;
-    margin-bottom: 3.5rem;
+    margin-bottom: 0;
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
   }
 
   .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
   }
 
   .feature-card {
     background: #FAF7EF;
-    padding: 2.25rem;
-    border-radius: 0.85rem;
+    padding: 2rem;
+    border-radius: 1rem;
     border: 1px solid #E8DFD3;
     transition: all 0.3s ease;
     text-align: center;
@@ -73,18 +82,21 @@
 
   .feature-card:hover {
     border-color: #2F7D32;
-    box-shadow: 0 6px 16px rgba(47, 125, 50, 0.08);
+    box-shadow: 0 8px 24px rgba(47, 125, 50, 0.1);
+    transform: translateY(-2px);
   }
 
   .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     display: block;
+    line-height: 1;
   }
 
   .feature-card h3 {
     color: #142016;
     margin-bottom: 0.75rem;
+    font-size: 1.15rem;
   }
 
   .feature-card p {
@@ -98,9 +110,22 @@
   }
 
   @media (max-width: 768px) {
+    .for-birdwatchers {
+      padding: 4rem 0;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+    }
+
+    .for-birdwatchers h2 {
+      font-size: 1.5rem;
+    }
+
     .features {
       grid-template-columns: 1fr;
       gap: 1.5rem;
+      margin-bottom: 2rem;
     }
   }
 </style>

@@ -4,103 +4,198 @@
 
 <section id="for-guides" class="for-guides section">
   <div class="container">
-    <h2>Built for Algarve birding guides.</h2>
-    <p class="section-subtitle">
-      Save time after every walk and give guests a professional memory of the tour.
-    </p>
-
-    <div class="features">
-      <div class="feature-card">
-        <div class="feature-icon">⏱️</div>
-        <h3>Save time</h3>
-        <p>Reports are generated from observations, not written from scratch.</p>
+    <div class="guides-grid">
+      <div class="guides-visual">
+        <div class="guide-mockup">
+          <div style="font-size: 4rem; line-height: 1;">🧑‍🔭</div>
+        </div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">⭐</div>
-        <h3>Look professional</h3>
-        <p>Guests receive a polished report with species, route, photos and notes.</p>
-      </div>
+      <div class="guides-content">
+        <h2>Join Guided Tours<br/>with Local Experts</h2>
+        <p class="guides-subtitle">
+          Learn from experienced birding guides who know Algarve's best locations and can help you spot rare species.
+        </p>
 
-      <div class="feature-card">
-        <div class="feature-icon">🔁</div>
-        <h3>Reuse tours</h3>
-        <p>Create templates for regular walks, private tours and hotel experiences.</p>
-      </div>
-    </div>
+        <div class="features">
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <h3>Guided Excursions</h3>
+              <p>Join expert-led birdwatching tours tailored to your experience level.</p>
+            </div>
+          </div>
 
-    <div class="for-guides-cta">
-      <a href="#guide-program" class="btn btn-primary">Join the Guide Program</a>
+          <div class="feature-item">
+            <div class="feature-icon">📋</div>
+            <div>
+              <h3>Species Checklists</h3>
+              <p>Track all species spotted during the tour with detailed information.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">🔍</div>
+            <div>
+              <h3>Real-Time Observations</h3>
+              <p>See live sightings as the guide records them during the tour.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">📷</div>
+            <div>
+              <h3>Multi-user Bird<br/>Information</h3>
+              <p>Share photos and observations with other tour participants.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="for-guides-cta">
+          <a href="#" class="btn btn-secondary">Open Bird Library</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
   .for-guides {
-    background-color: #FAF7EF;
+    background-color: #fff;
+    padding: 5.5rem 0;
   }
 
-  .for-guides h2 {
-    text-align: center;
-    margin-bottom: 0.75rem;
-  }
-
-  .section-subtitle {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #5E6B60;
-    margin-bottom: 3.5rem;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .features {
+  .guides-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
   }
 
-  .feature-card {
-    background: #FFFFFF;
-    padding: 2.25rem;
-    border-radius: 0.85rem;
-    border: 1px solid #E8DFD3;
-    transition: all 0.3s ease;
-    text-align: center;
+  .guides-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .feature-card:hover {
-    border-color: #2F7D32;
-    box-shadow: 0 6px 16px rgba(47, 125, 50, 0.08);
+  .guide-mockup {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #EAF3E5 0%, #D4E8D0 100%);
+    border-radius: 1.5rem;
+    border: 1px solid #C7E0C8;
+    box-shadow: 0 12px 32px rgba(47, 125, 50, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
-  .feature-icon {
-    font-size: 2.5rem;
+  .guides-content h2 {
+    font-size: 2rem;
+    color: #142016;
     margin-bottom: 1rem;
-    display: block;
+    line-height: 1.2;
   }
 
-  .feature-card h3 {
-    color: #2F7D32;
-    margin-bottom: 0.75rem;
-  }
-
-  .feature-card p {
+  .guides-subtitle {
+    font-size: 1.05rem;
     color: #5E6B60;
-    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
     line-height: 1.6;
   }
 
-  .for-guides-cta {
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .feature-item {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .feature-icon {
+    font-size: 1.8rem;
+    min-width: 40px;
     text-align: center;
+    line-height: 1;
+    color: #2F7D32;
+    font-weight: 600;
+  }
+
+  .feature-item h3 {
+    color: #142016;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .feature-item p {
+    color: #5E6B60;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .for-guides-cta {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .guides-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .guide-mockup {
+      max-width: 300px;
+    }
+
+    .guides-content h2 {
+      font-size: 1.75rem;
+    }
   }
 
   @media (max-width: 768px) {
+    .for-guides {
+      padding: 4rem 0;
+    }
+
+    .guides-grid {
+      gap: 2rem;
+    }
+
+    .guides-content h2 {
+      font-size: 1.5rem;
+    }
+
+    .guides-subtitle {
+      font-size: 1rem;
+    }
+
     .features {
-      grid-template-columns: 1fr;
       gap: 1.5rem;
+    }
+
+    .guide-mockup {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .feature-item {
+      gap: 1rem;
+    }
+
+    .feature-icon {
+      font-size: 1.5rem;
+    }
+
+    .feature-item h3 {
+      font-size: 0.95rem;
     }
   }
 </style>

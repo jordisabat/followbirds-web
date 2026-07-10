@@ -3,60 +3,86 @@
 ---
 
 <section class="hero section">
-  <div class="container">
+  <!-- Background image -->
+  <div class="hero-background"></div>
+  
+  <div class="hero-overlay"></div>
+
+  <p class="hero-photo-credit">
+    Photo by <a href="https://unsplash.com/@_nnaro_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Diego Gennaro</a> on <a href="https://unsplash.com/photos/photography-of-seashore-during-daytime-cmYjQ30PbWk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a>
+  </p>
+
+  <div class="container hero-container">
     <div class="hero-content">
-      <h1>Run better birdwatching tours.<br/>Give every guest a beautiful report.</h1>
+      <h1>The Complete<br/>Birdwatching Companion<br/>for Portugal</h1>
       <p class="hero-subtitle">
-        FollowBirds helps Algarve guides share live sightings, build tour checklists and generate automatic reports for every participant.
+        Discover birds, explore birding hotspots, join guided tours, track sightings, and create lasting records of your birdwatching adventures.
       </p>
 
       <div class="hero-ctas">
-        <a href="#guide-program" class="btn btn-primary btn-lg">Become a Guide</a>
-        <a href="#reports" class="btn btn-secondary btn-lg">See Example Report</a>
-        <a href="https://followbirdsapp.web.app" class="btn btn-tertiary" target="_blank">
-          Open App →
+        <a href="https://followbirdsapp.web.app" class="btn btn-primary btn-lg">Open App</a>
+        <a href="#guide-program" class="btn btn-secondary btn-lg">Become a Guide</a>
+      </div>
+
+      <div class="app-store-links">
+        <a href="#" class="store-link" target="_blank">
+          <span class="store-icon">🍎</span> App Store
+        </a>
+        <a href="#" class="store-link" target="_blank">
+          <span class="store-icon">▶️</span> Google Play
         </a>
       </div>
     </div>
 
     <div class="hero-visual">
-      <!-- TODO: Replace with real report screenshot -->
-      <div class="report-preview">
-        <div class="report-header-mock">
-          <div class="report-title">Ria Formosa Tour</div>
-          <div class="report-meta">João Silva • 8 participants</div>
-        </div>
-
-        <div class="report-section-mock">
-          <div class="report-label">Species Sighted</div>
-          <div class="species-chips">
-            <span class="chip">🦅 Booted Eagle</span>
-            <span class="chip">🦆 Greater Flamingo</span>
-            <span class="chip">🐝 Bee-eater</span>
-            <span class="chip">🦅 Audouin's Gull</span>
-          </div>
-        </div>
-
-        <div class="report-section-mock">
-          <div class="report-label">Timeline</div>
-          <div class="timeline-mock">
-            <div class="timeline-entry">
-              <span class="time">08:42</span>
-              <span class="species">Booted Eagle</span>
-            </div>
-            <div class="timeline-entry">
-              <span class="time">09:45</span>
-              <span class="species">Greater Flamingo</span>
-            </div>
-            <div class="timeline-entry">
-              <span class="time">10:20</span>
-              <span class="species">European Bee-eater</span>
+      <!-- Multiple phone mockups -->
+      <div class="mockup-phones">
+        <div class="mockup-device mockup-left">
+          <div class="mockup-frame">
+            <div class="mockup-content">
+              <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; color: #2F7D32;">
+                <div style="font-size: 3rem;">🦅</div>
+                <div style="font-size: 0.9rem; font-weight: 600; text-align: center;">Western Olivaceous Warbler</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="report-footer-mock">
-          📊 Web Report • 📄 PDF • 🔗 Shareable
+        <div class="mockup-device mockup-center">
+          <div class="mockup-frame">
+            <div class="mockup-content">
+              <div class="mockup-header">Tour Checklist</div>
+              <div class="mockup-list">
+                <div class="mockup-item checked">
+                  <span class="check">✓</span>
+                  <span>Booted Eagle</span>
+                </div>
+                <div class="mockup-item checked">
+                  <span class="check">✓</span>
+                  <span>Kentish Plover</span>
+                </div>
+                <div class="mockup-item checked">
+                  <span class="check">✓</span>
+                  <span>Greater Flamingo</span>
+                </div>
+                <div class="mockup-item">
+                  <span class="check">◯</span>
+                  <span>Audouin's Gull</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mockup-device mockup-right">
+          <div class="mockup-frame">
+            <div class="mockup-content">
+              <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; color: #2F7D32;">
+                <div style="font-size: 2.5rem;">📍</div>
+                <div style="font-size: 0.9rem; font-weight: 600; text-align: center; margin-top: 1rem;">Birding Hotspots</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -65,31 +91,89 @@
 
 <style>
   .hero {
-    background: linear-gradient(135deg, #FAF7EF 0%, #EAF3E5 100%);
-    padding: 6rem 0 5rem;
+    position: relative;
+    padding: 3rem 0 4rem;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
   }
 
-  .hero .container {
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/hero-background-algarve.jpg') center/cover no-repeat;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      105deg,
+      rgba(10, 28, 12, 0.72) 0%,
+      rgba(10, 28, 12, 0.45) 55%,
+      rgba(10, 28, 12, 0.2) 100%
+    );
+    z-index: 1;
+  }
+
+  .hero-photo-credit {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 1rem;
+    z-index: 10;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.45);
+    margin: 0;
+    line-height: 1;
+  }
+
+  .hero-photo-credit a {
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+  }
+
+  .hero-photo-credit a:hover {
+    color: rgba(255,255,255,0.75);
+    text-decoration: underline;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 10;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 3rem;
     align-items: center;
   }
 
   .hero-content {
-    flex: 1;
+    padding-left: 1rem;
   }
 
   .hero h1 {
-    color: #142016;
+    color: #fff;
     margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    font-weight: 400;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.3);
   }
 
   .hero-subtitle {
     font-size: 1.15rem;
-    color: #5E6B60;
-    margin-bottom: 2.5rem;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 2rem;
     line-height: 1.7;
+    max-width: 500px;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.2);
   }
 
   .hero-ctas {
@@ -97,161 +181,241 @@
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 1.5rem;
   }
 
   .btn-lg {
     padding: 0.95rem 2rem;
     font-size: 1.05rem;
-  }
-
-  .btn-tertiary {
-    background: none;
-    color: #2F7D32;
-    border: none;
     font-weight: 600;
-    padding: 0;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.2s ease;
   }
 
-  .btn-tertiary:hover {
-    color: #1b5e20;
+  /* Override secondary button for hero (white outline on dark bg) */
+  .hero-ctas .btn-secondary {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border-color: rgba(255,255,255,0.7);
+  }
+
+  .hero-ctas .btn-secondary:hover {
+    background: rgba(255,255,255,0.22);
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .app-store-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .store-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.1rem;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.88rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+    transition: background 0.2s ease;
+  }
+
+  .store-link:hover {
+    background: rgba(0,0,0,0.7);
+  }
+
+  .store-icon {
+    font-size: 1.2rem;
   }
 
   .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 480px;
+  }
+
+  .mockup-phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
+  }
+
+  .mockup-device {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    perspective: 1000px;
+  }
+
+  .mockup-left {
+    transform: translateX(20px) rotateY(8deg);
+  }
+
+  .mockup-center {
+    transform: scale(1.05);
+    z-index: 20;
+  }
+
+  .mockup-right {
+    transform: translateX(-20px) rotateY(-8deg);
+  }
+
+  .mockup-frame {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 3rem;
+    padding: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .mockup-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 26px;
+    background: #000;
+    border-radius: 2rem;
+    z-index: 10;
+  }
+
+  .mockup-content {
     flex: 1;
+    margin-top: 14px;
+    padding: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
-  .report-preview {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F9F7F3 100%);
-    border-radius: 1.25rem;
-    border: 1px solid #E8DFD3;
-    padding: 2rem;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-  }
-
-  .report-header-mock {
-    margin-bottom: 1.75rem;
-    padding-bottom: 1.25rem;
-    border-bottom: 2px solid #2F7D32;
-  }
-
-  .report-title {
-    font-size: 1.15rem;
+  .mockup-header {
     font-weight: 700;
+    font-size: 1.1rem;
     color: #142016;
-    margin-bottom: 0.25rem;
-  }
-
-  .report-meta {
-    font-size: 0.85rem;
-    color: #999;
-  }
-
-  .report-section-mock {
     margin-bottom: 1.5rem;
   }
 
-  .report-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2F7D32;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    margin-bottom: 0.75rem;
-  }
-
-  .species-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .chip {
-    background: #EAF3E5;
-    color: #2F7D32;
-    padding: 0.45rem 0.85rem;
-    border-radius: 0.55rem;
-    font-size: 0.82rem;
-    font-weight: 500;
-    display: inline-block;
-  }
-
-  .timeline-mock {
+  .mockup-list {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
   }
 
-  .timeline-entry {
+  .mockup-item {
     display: flex;
-    gap: 1rem;
-    padding: 0.6rem 0.85rem;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.7rem;
     background: #FAF7EF;
-    border-left: 3px solid #2F7D32;
-    border-radius: 0.4rem;
-    font-size: 0.85rem;
-  }
-
-  .time {
-    font-weight: 700;
-    color: #2F7D32;
-    min-width: 50px;
-  }
-
-  .species {
-    color: #142016;
-  }
-
-  .report-footer-mock {
-    text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid #E8DFD3;
-    font-size: 0.85rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
     color: #5E6B60;
-    font-weight: 500;
   }
 
-  @media (max-width: 968px) {
-    .hero .container {
+  .mockup-item.checked {
+    background: #EAF3E5;
+    color: #2F7D32;
+  }
+
+  .mockup-item .check {
+    color: #2F7D32;
+    font-weight: 700;
+    min-width: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .hero {
+      min-height: 600px;
+      padding: 2rem 0 3rem;
+    }
+
+    .hero-container {
       grid-template-columns: 1fr;
-      gap: 2.5rem;
+      gap: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+
+    .hero-visual {
+      height: auto;
+      min-height: 450px;
+    }
+
+    .mockup-phones {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .mockup-device {
+      width: 220px;
+      height: 440px;
     }
   }
 
   @media (max-width: 768px) {
     .hero {
-      padding: 4rem 0 3.5rem;
+      min-height: auto;
+      padding: 2rem 0 3rem;
     }
 
-    .hero .container {
-      grid-template-columns: 1fr;
+    .hero-content {
+      padding-left: 0;
+    }
+
+    .hero h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .hero-ctas {
       flex-direction: column;
       gap: 0.75rem;
+      margin-bottom: 1rem;
     }
 
     .hero-ctas .btn {
       width: 100%;
-      text-align: center;
     }
 
-    .btn-tertiary {
-      padding: 0.75rem 1rem;
-      width: 100%;
-      text-align: center;
+    .app-store-links {
+      flex-direction: column;
     }
 
-    .report-preview {
-      padding: 1.5rem;
+    .mockup-visual {
+      margin-top: 2rem;
     }
 
-    .report-header-mock {
-      margin-bottom: 1.25rem;
-      padding-bottom: 1rem;
+    .mockup-phones {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .mockup-device {
+      width: 240px;
+      height: 480px;
+      transform: none !important;
     }
   }
 </style>

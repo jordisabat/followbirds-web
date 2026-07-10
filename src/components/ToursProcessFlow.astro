@@ -1,0 +1,204 @@
+---
+// How FollowBirds Tours Work Section
+---
+
+<section id="tours-process" class="tours-process section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">How FollowBirds Tours Work</span>
+      <h2>Six Simple Steps from<br/>Template to Report</h2>
+    </div>
+
+    <div class="steps-row">
+      <div class="step-item">
+        <div class="step-number">1</div>
+        <div class="step-connector"></div>
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+        </div>
+        <p class="step-label">Guide creates a reusable tour template</p>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <div class="step-connector"></div>
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+        </div>
+        <p class="step-label">Guide creates a tour from that template</p>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <div class="step-connector"></div>
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <p class="step-label">Participants invited by email, link, or QR code</p>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">4</div>
+        <div class="step-connector"></div>
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <p class="step-label">Tour appears inside the participant's account</p>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">5</div>
+        <div class="step-connector"></div>
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <p class="step-label">Guide and participants follow observations together</p>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">6</div>
+        <div class="step-connector" style="display:none"></div>
+        <div class="step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <polyline points="9 11 12 14 22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+        </div>
+        <p class="step-label">FollowBirds generates a complete report at the end</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tours-process {
+    background: #FAF7EF;
+    padding: 5.5rem 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .tours-process h2 {
+    color: #142016;
+  }
+
+  .steps-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    position: relative;
+  }
+
+  /* Horizontal connecting line behind steps */
+  .steps-row::before {
+    content: '';
+    position: absolute;
+    top: 2.75rem; /* aligns with center of step-number circle */
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: linear-gradient(90deg, #2F7D32, #A5D6A7);
+    z-index: 0;
+  }
+
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+    padding: 0 0.5rem;
+  }
+
+  .step-number {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #2F7D32;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #FAF7EF;
+    box-shadow: 0 0 0 2px #2F7D32;
+    flex-shrink: 0;
+  }
+
+  .step-connector {
+    display: none; /* handled by ::before pseudo-element */
+  }
+
+  .step-icon {
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F7D32;
+    box-shadow: 0 4px 14px rgba(47,125,50,0.12);
+    border: 1px solid #EDE8DF;
+  }
+
+  .step-label {
+    font-size: 0.8rem;
+    color: #5E6B60;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0.25rem;
+  }
+
+  @media (max-width: 1024px) {
+    .steps-row {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .steps-row::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .tours-process {
+      padding: 4rem 0;
+    }
+
+    .steps-row {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .step-icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+</style>

@@ -1,79 +1,174 @@
 ---
-// Guide Program CTA Section (merged from GuideProgram + FinalCTA)
+// Powerful Tools for Guides Section + Guide Program CTA
 ---
 
 <section id="guide-program" class="guide-program-cta section">
   <div class="container">
-    <h2>Become one of the first FollowBirds guides in Algarve.</h2>
-    <p class="cta-subtitle">
-      For private tours, group walks, hotel experiences and birding holidays.
-    </p>
+    <div class="guide-program-header">
+      <span class="coming-soon-badge">COMING SOON</span>
+      <h2>Powerful Tools for<br/>Birding Guides</h2>
+      <p class="cta-subtitle">
+        FollowBirds helps guides organize tours, manage participants, track observations, and generate professional reports.
+      </p>
+    </div>
+
+    <div class="tools-grid grid-6">
+      <div class="tool-card">
+        <div class="tool-icon">📋</div>
+        <h3>Tour Templates</h3>
+        <p>Create reusable tour templates for your regular walks.</p>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon">👥</div>
+        <h3>Participant Management</h3>
+        <p>Easily invite and manage tour participants.</p>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon">📊</div>
+        <h3>Tour Statistics</h3>
+        <p>Track species found and participant engagement metrics.</p>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon">📸</div>
+        <h3>Photo Integration</h3>
+        <p>Include photos in your reports automatically.</p>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon">📱</div>
+        <h3>Mobile App</h3>
+        <p>Manage tours and sightings on the go.</p>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon">📈</div>
+        <h3>Business Analytics</h3>
+        <p>Monitor your guiding business performance.</p>
+      </div>
+    </div>
 
     <div class="cta-buttons">
-      <a href="mailto:guides@followbirds.com" class="btn btn-primary btn-lg">Join the Guide Program</a>
-      <a href="#reports" class="btn btn-secondary-light btn-lg">See Example Report</a>
+      <a href="mailto:guides@followbirds.com" class="btn btn-primary btn-lg">Become a Guide</a>
     </div>
   </div>
 </section>
 
 <style>
   .guide-program-cta {
-    background: linear-gradient(135deg, #2F7D32 0%, #1b5e20 100%);
-    color: #fff;
-    text-align: center;
+    background: #fff;
+    padding: 5.5rem 0;
   }
 
-  .guide-program-cta h2 {
+  .guide-program-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .coming-soon-badge {
+    display: inline-block;
+    background: #2F7D32;
     color: #fff;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     margin-bottom: 1rem;
   }
 
+  .guide-program-cta h2 {
+    color: #142016;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
   .cta-subtitle {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+    color: #5E6B60;
+    margin-bottom: 0;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .tools-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .tool-card {
+    background: #FAF7EF;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #E8DFD3;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .tool-card:hover {
+    border-color: #2F7D32;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(47, 125, 50, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .tool-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    line-height: 1;
+  }
+
+  .tool-card h3 {
+    color: #142016;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  .tool-card p {
+    color: #5E6B60;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
   }
 
   .cta-buttons {
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .cta-buttons .btn {
-    min-width: 200px;
+    min-width: 220px;
   }
 
   .btn-lg {
-    padding: 0.95rem 2rem;
+    padding: 1rem 2.25rem;
     font-size: 1.05rem;
   }
 
-  .btn-secondary-light {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    border: 2px solid #fff;
-    transition: all 0.2s ease;
-  }
-
-  .btn-secondary-light:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .guide-program-cta .btn-primary {
-    background-color: #fff;
-    color: #2F7D32;
-  }
-
-  .guide-program-cta .btn-primary:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-
   @media (max-width: 768px) {
+    .guide-program-cta {
+      padding: 4rem 0;
+    }
+
+    .guide-program-header {
+      margin-bottom: 3rem;
+    }
+
+    .guide-program-cta h2 {
+      font-size: 1.5rem;
+    }
+
+    .tools-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .cta-buttons {
       flex-direction: column;
     }

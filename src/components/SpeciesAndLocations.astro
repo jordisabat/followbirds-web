@@ -1,0 +1,785 @@
+---
+// Browse Species + Birding Locations — two independent sections
+---
+
+<!-- SECTION 1: Browse Species -->
+<section id="browse-species" class="browse-species-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Explore Portugal's Birdlife</span>
+      <h2>Browse Over 450 Species</h2>
+      <p class="section-subtitle">
+        Browse over 450 bird species found across Portugal, complete with photos, multilingual names, descriptions, and habitat information.
+      </p>
+    </div>
+
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="species-photo">
+          <img src="/species-iberian-magpie.jpg" alt="Iberian Magpie" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="species-fallback">🐦</div>
+        </div>
+        <div class="species-info">
+          <h3>Iberian Magpie</h3>
+          <p class="species-sci">Cyanopica cooki</p>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <div class="species-photo">
+          <img src="/species-greater-flamingo.jpg" alt="Greater Flamingo" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="species-fallback">🦢</div>
+        </div>
+        <div class="species-info">
+          <h3>Greater Flamingo</h3>
+          <p class="species-sci">Phoenicopterus roseus</p>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <div class="species-photo">
+          <img src="/species-european-bee-eater.jpg" alt="European Bee-eater" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="species-fallback">🐦</div>
+        </div>
+        <div class="species-info">
+          <h3>European Bee-eater</h3>
+          <p class="species-sci">Merops apiaster</p>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <div class="species-photo">
+          <img src="/species-little-egret.jpg" alt="Little Egret" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="species-fallback">🦅</div>
+        </div>
+        <div class="species-info">
+          <h3>Little Egret</h3>
+          <p class="species-sci">Egretta garzetta</p>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <div class="species-photo">
+          <img src="/species-black-winged-stilt.jpg" alt="Black-winged Stilt" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="species-fallback">🦆</div>
+        </div>
+        <div class="species-info">
+          <h3>Black-winged Stilt</h3>
+          <p class="species-sci">Himantopus himantopus</p>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <div class="species-photo">
+          <img src="/species-zitting-cisticola.jpg" alt="Zitting Cisticola" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="species-fallback">🐦</div>
+        </div>
+        <div class="species-info">
+          <h3>Zitting Cisticola</h3>
+          <p class="species-sci">Cisticola juncidis</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a href="#" class="btn btn-secondary">Open Bird Library</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: Birding Locations -->
+<section id="birding-locations" class="birding-locations-section">
+  <div class="container">
+    <div class="locations-layout">
+      <div class="locations-text">
+        <span class="section-label">Discover Algarve's Best Birding Locations</span>
+        <h2>Explore Algarve's Best Birding Locations</h2>
+        <p class="locations-subtitle">
+          Explore curated birdwatching hotspots, observation points, wetlands, estuaries, and recommended birding routes throughout Algarve.
+        </p>
+
+        <div class="map-legend">
+          <div class="legend-item">
+            <span class="legend-dot dot-hotspot"></span>
+            <span>Birding Hotspots</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot dot-track"></span>
+            <span>Suggested Tracks</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot dot-obs"></span>
+            <span>Observation Points</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot dot-seasonal"></span>
+            <span>Seasonal Recommendations</span>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-secondary">Explore Locations</a>
+      </div>
+
+      <div class="locations-map">
+        <div class="map-frame">
+          <img src="/algarve-map.jpg" alt="Algarve birding locations map" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="map-placeholder-art">
+            <div class="map-art-inner">
+              <div class="map-dot dot-1"></div>
+              <div class="map-dot dot-2"></div>
+              <div class="map-dot dot-3"></div>
+              <div class="map-dot dot-4"></div>
+              <div class="map-dot dot-5"></div>
+              <div class="map-dot dot-6"></div>
+              <div class="map-line line-h"></div>
+              <div class="map-line line-v"></div>
+              <div class="map-label-top">Algarve</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ── Section 1: Browse Species ── */
+  .browse-species-section {
+    background: #fff;
+    padding: 5.5rem 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: #5E6B60;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .species-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .species-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #EDE8DF;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    background: #FAF7EF;
+  }
+
+  .species-card:hover {
+    box-shadow: 0 6px 20px rgba(47,125,50,0.12);
+    transform: translateY(-3px);
+  }
+
+  .species-photo {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    position: relative;
+    background: #D4E8D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .species-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .species-fallback {
+    font-size: 2.5rem;
+    position: absolute;
+    display: none;
+  }
+
+  .species-photo.no-img img { display: none; }
+  .species-photo.no-img .species-fallback { display: block; }
+  .species-photo img[src=""] ~ .species-fallback,
+  .species-photo img:not([src]) ~ .species-fallback { display: block; }
+
+  .species-info {
+    padding: 0.6rem 0.75rem 0.75rem;
+  }
+
+  .species-info h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #142016;
+    margin: 0 0 0.2rem;
+    line-height: 1.3;
+  }
+
+  .species-sci {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #5E6B60;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .section-cta {
+    text-align: center;
+  }
+
+  /* ── Section 2: Birding Locations ── */
+  .birding-locations-section {
+    background: #FAF7EF;
+    padding: 5.5rem 0;
+  }
+
+  .locations-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .locations-text h2 {
+    margin-bottom: 1rem;
+  }
+
+  .locations-subtitle {
+    font-size: 1rem;
+    color: #5E6B60;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .map-legend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.75rem;
+    border: 1px solid #EDE8DF;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #5E6B60;
+    font-weight: 500;
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .dot-hotspot { background: #2F7D32; }
+  .dot-track   { background: #558B2F; }
+  .dot-obs     { background: #FF6B35; }
+  .dot-seasonal{ background: #1565C0; }
+
+  .map-frame {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid #EDE8DF;
+    aspect-ratio: 4/3;
+    background: #D8EDD4;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+  }
+
+  .map-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .map-placeholder-art {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-frame img[src=""] ~ .map-placeholder-art,
+  .map-frame img:not([src]) ~ .map-placeholder-art { display: flex; }
+
+  .map-art-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-label-top {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2F7D32;
+    opacity: 0.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .map-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2F7D32;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .dot-1 { top: 30%; left: 25%; }
+  .dot-2 { top: 45%; left: 42%; }
+  .dot-3 { top: 60%; left: 30%; }
+  .dot-4 { top: 35%; left: 65%; }
+  .dot-5 { top: 55%; left: 72%; }
+  .dot-6 { top: 70%; left: 55%; background: #FF6B35; }
+
+  .map-line { position: absolute; background: rgba(47,125,50,0.2); }
+  .line-h { left: 15%; right: 15%; top: 50%; height: 1px; }
+  .line-v { top: 20%; bottom: 20%; left: 50%; width: 1px; }
+
+  /* ── Responsive ── */
+  @media (max-width: 1100px) {
+    .species-grid { grid-template-columns: repeat(3, 1fr); }
+    .locations-layout { grid-template-columns: 1fr; gap: 3rem; }
+  }
+
+  @media (max-width: 640px) {
+    .browse-species-section,
+    .birding-locations-section { padding: 4rem 0; }
+    .species-grid { grid-template-columns: repeat(2, 1fr); }
+    .map-legend { grid-template-columns: 1fr; }
+  }
+</style>
+
+  <!-- LEFT: Browse Species -->
+  <div class="panel panel-left">
+    <div class="panel-inner">
+      <span class="section-label">Explore Portugal's Birdlife</span>
+      <h2>Browse Over 450 Species</h2>
+      <p class="panel-subtitle">
+        Browse over 450 bird species found across Portugal, complete with photos, multilingual names, descriptions, and habitat information.
+      </p>
+
+      <div class="species-grid">
+        <div class="species-card">
+          <div class="species-photo">
+            <img src="/species-iberian-magpie.jpg" alt="Iberian Magpie" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="species-fallback">🐦</div>
+          </div>
+          <div class="species-info">
+            <h3>Iberian Magpie</h3>
+            <p class="species-sci">Cyanopica cooki</p>
+          </div>
+        </div>
+
+        <div class="species-card">
+          <div class="species-photo">
+            <img src="/species-greater-flamingo.jpg" alt="Greater Flamingo" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="species-fallback">🦢</div>
+          </div>
+          <div class="species-info">
+            <h3>Greater Flamingo</h3>
+            <p class="species-sci">Phoenicopterus roseus</p>
+          </div>
+        </div>
+
+        <div class="species-card">
+          <div class="species-photo">
+            <img src="/species-european-bee-eater.jpg" alt="European Bee-eater" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="species-fallback">🐦</div>
+          </div>
+          <div class="species-info">
+            <h3>European Bee-eater</h3>
+            <p class="species-sci">Merops apiaster</p>
+          </div>
+        </div>
+
+        <div class="species-card">
+          <div class="species-photo">
+            <img src="/species-little-egret.jpg" alt="Little Egret" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="species-fallback">🦅</div>
+          </div>
+          <div class="species-info">
+            <h3>Little Egret</h3>
+            <p class="species-sci">Egretta garzetta</p>
+          </div>
+        </div>
+
+        <div class="species-card">
+          <div class="species-photo">
+            <img src="/species-black-winged-stilt.jpg" alt="Black-winged Stilt" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="species-fallback">🦆</div>
+          </div>
+          <div class="species-info">
+            <h3>Black-winged Stilt</h3>
+            <p class="species-sci">Himantopus himantopus</p>
+          </div>
+        </div>
+
+        <div class="species-card">
+          <div class="species-photo">
+            <img src="/species-zitting-cisticola.jpg" alt="Zitting Cisticola" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="species-fallback">🐦</div>
+          </div>
+          <div class="species-info">
+            <h3>Zitting Cisticola</h3>
+            <p class="species-sci">Cisticola juncidis</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-cta">
+        <a href="#" class="btn btn-secondary">Open Bird Library</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="panel-divider"></div>
+
+  <!-- RIGHT: Birding Locations -->
+  <div class="panel panel-right">
+    <div class="panel-inner">
+      <span class="section-label">Discover Algarve's Best Birding Locations</span>
+      <h2>Explore Algarve's Best Birding Locations</h2>
+      <p class="panel-subtitle">
+        Explore curated birdwatching hotspots, observation points, wetlands, estuaries, and recommended birding routes throughout Algarve.
+      </p>
+
+      <div class="map-container">
+        <div class="map-frame">
+          <img src="/algarve-map.jpg" alt="Algarve birding locations map" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="map-placeholder-art">
+            <div class="map-art-inner">
+              <div class="map-dot dot-1"></div>
+              <div class="map-dot dot-2"></div>
+              <div class="map-dot dot-3"></div>
+              <div class="map-dot dot-4"></div>
+              <div class="map-dot dot-5"></div>
+              <div class="map-dot dot-6"></div>
+              <div class="map-line line-h"></div>
+              <div class="map-line line-v"></div>
+              <div class="map-label-top">Algarve</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-legend">
+          <div class="legend-item">
+            <span class="legend-dot dot-hotspot"></span>
+            <span>Birding Hotspots</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot dot-track"></span>
+            <span>Suggested Tracks</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot dot-obs"></span>
+            <span>Observation Points</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot dot-seasonal"></span>
+            <span>Seasonal Recommendations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-cta">
+        <a href="#" class="btn btn-secondary">Explore Locations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .two-panel-section {
+    display: grid;
+    grid-template-columns: 1fr 4px 1fr;
+    background: #fff;
+  }
+
+  .panel {
+    padding: 5.5rem 0;
+  }
+
+  .panel-left .panel-inner {
+    max-width: 560px;
+    margin-left: auto;
+    padding: 0 3rem 0 1.5rem;
+  }
+
+  .panel-right .panel-inner {
+    max-width: 560px;
+    margin-right: auto;
+    padding: 0 1.5rem 0 3rem;
+  }
+
+  .panel-divider {
+    background: #EDE8DF;
+    align-self: stretch;
+  }
+
+  .panel-subtitle {
+    font-size: 0.95rem;
+    color: #5E6B60;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  /* Species Grid */
+  .species-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  .species-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #EDE8DF;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    background: #FAF7EF;
+  }
+
+  .species-card:hover {
+    box-shadow: 0 6px 20px rgba(47,125,50,0.12);
+    transform: translateY(-3px);
+  }
+
+  .species-photo {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    position: relative;
+    background: #D4E8D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .species-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .species-fallback {
+    font-size: 2.5rem;
+    position: absolute;
+    display: none;
+  }
+
+  /* Show fallback when image errors */
+  .species-photo.no-img img { display: none; }
+  .species-photo.no-img .species-fallback { display: block; }
+
+  /* When no image loaded yet, show fallback too */
+  .species-photo img[src=""] ~ .species-fallback,
+  .species-photo img:not([src]) ~ .species-fallback {
+    display: block;
+  }
+
+  .species-info {
+    padding: 0.6rem 0.75rem 0.75rem;
+  }
+
+  .species-info h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #142016;
+    margin: 0 0 0.2rem;
+    line-height: 1.3;
+  }
+
+  .species-sci {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #5E6B60;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* Map */
+  .map-container {
+    margin-bottom: 2rem;
+  }
+
+  .map-frame {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid #EDE8DF;
+    aspect-ratio: 4/3;
+    background: #D8EDD4;
+    position: relative;
+  }
+
+  .map-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .map-placeholder-art {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-frame img[src=""] ~ .map-placeholder-art,
+  .map-frame img:not([src]) ~ .map-placeholder-art {
+    display: flex;
+  }
+
+  .map-art-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-label-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2F7D32;
+    opacity: 0.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .map-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2F7D32;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .dot-1 { top: 30%; left: 25%; }
+  .dot-2 { top: 45%; left: 42%; }
+  .dot-3 { top: 60%; left: 30%; }
+  .dot-4 { top: 35%; left: 65%; }
+  .dot-5 { top: 55%; left: 72%; }
+  .dot-6 { top: 70%; left: 55%; background: #FF6B35; }
+
+  .map-line {
+    position: absolute;
+    background: rgba(47,125,50,0.2);
+  }
+
+  .line-h {
+    left: 15%;
+    right: 15%;
+    top: 50%;
+    height: 1px;
+  }
+
+  .line-v {
+    top: 20%;
+    bottom: 20%;
+    left: 50%;
+    width: 1px;
+  }
+
+  .map-legend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #FAF7EF;
+    border-radius: 0.75rem;
+    border: 1px solid #EDE8DF;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #5E6B60;
+    font-weight: 500;
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .dot-hotspot { background: #2F7D32; }
+  .dot-track { background: #558B2F; }
+  .dot-obs { background: #FF6B35; }
+  .dot-seasonal { background: #1565C0; }
+
+  .panel-cta {
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 1100px) {
+    .two-panel-section {
+      grid-template-columns: 1fr;
+    }
+
+    .panel-divider {
+      display: none;
+    }
+
+    .panel {
+      padding: 4rem 0;
+      border-bottom: 1px solid #EDE8DF;
+    }
+
+    .panel:last-child {
+      border-bottom: none;
+    }
+
+    .panel-left .panel-inner,
+    .panel-right .panel-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .species-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .map-legend {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

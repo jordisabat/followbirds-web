@@ -3,7 +3,7 @@
 ---
 
 <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <nav class="nav">
       <div class="logo">
         <a href="/">
@@ -14,16 +14,16 @@
 
       <ul class="nav-links">
         <li><a href="#what-is-followbirds">Features</a></li>
-        <li><a href="#for-guides">For Guides</a></li>
         <li><a href="#reports">Reports</a></li>
+        <li><a href="#for-guides">For Guides</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
 
       <div class="nav-ctas">
-        <a href="#guide-program" class="btn btn-primary">Become a Guide</a>
         <a href="https://followbirdsapp.web.app" class="nav-link-secondary" target="_blank">
           Open App
         </a>
+        <a href="#guide-program" class="btn btn-primary btn-sm">Become a Guide</a>
       </div>
     </nav>
   </div>
@@ -36,14 +36,18 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    max-width: 1320px;
   }
 
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.9rem 0;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .logo a {
@@ -52,8 +56,13 @@
     gap: 0.5rem;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #142016;
+    transition: opacity 0.2s ease;
+  }
+
+  .logo a:hover {
+    opacity: 0.8;
   }
 
   .logo-icon {
@@ -61,7 +70,7 @@
   }
 
   .nav-links {
-    display: none;
+    display: flex;
     list-style: none;
     gap: 2.5rem;
     flex: 1;
@@ -81,7 +90,7 @@
 
   .nav-ctas {
     display: flex;
-    gap: 1.25rem;
+    gap: 1rem;
     align-items: center;
   }
 
@@ -97,28 +106,49 @@
     color: #2F7D32;
   }
 
-  @media (min-width: 768px) {
-    .nav-links {
-      display: flex;
+  .btn-sm {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 1024px) {
+    .nav {
+      gap: 2rem;
     }
 
-    .nav-link-secondary {
-      display: inline;
+    .nav-links {
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
     }
   }
 
   @media (max-width: 768px) {
-    .nav-link-secondary {
+    .header {
+      padding: 0.5rem 0;
+    }
+
+    .nav {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
       display: none;
     }
 
-    .nav-ctas {
-      gap: 0.75rem;
+    .logo a {
+      font-size: 1rem;
     }
 
-    .nav-ctas .btn {
-      padding: 0.75rem 1.25rem;
-      font-size: 0.9rem;
+    .nav-ctas {
+      margin-left: auto;
+    }
+
+    .nav-link-secondary {
+      display: none;
     }
   }
 </style>

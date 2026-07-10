@@ -1,0 +1,153 @@
+---
+// Browse Over 450 Species Section
+---
+
+<section id="browse-species" class="browse-species section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Explore Portugal's Birdlife</h2>
+      <p class="section-subtitle">
+        Browse over 450 bird species found across Portugal with detailed information, photos, and identification guides.
+      </p>
+    </div>
+
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="species-image">🦅</div>
+        <h3>Booted Eagle</h3>
+        <p class="species-label">Hieraaetus pennatus</p>
+      </div>
+
+      <div class="species-card">
+        <div class="species-image">🦢</div>
+        <h3>Greater Flamingo</h3>
+        <p class="species-label">Phoenicopterus roseus</p>
+      </div>
+
+      <div class="species-card">
+        <div class="species-image">🐦</div>
+        <h3>European Bee-eater</h3>
+        <p class="species-label">Merops apiaster</p>
+      </div>
+
+      <div class="species-card">
+        <div class="species-image">🦜</div>
+        <h3>Eurasian Hoopoe</h3>
+        <p class="species-label">Upupa epops</p>
+      </div>
+
+      <div class="species-card">
+        <div class="species-image">🦆</div>
+        <h3>Shoveler</h3>
+        <p class="species-label">Spatula clypeata</p>
+      </div>
+
+      <div class="species-card">
+        <div class="species-image">🦅</div>
+        <h3>Black Kite</h3>
+        <p class="species-label">Milvus migrans</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="#" class="btn btn-secondary">Open Bird Library</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .browse-species {
+    background-color: #fff;
+    padding: 5.5rem 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .browse-species h2 {
+    font-size: 2rem;
+    color: #142016;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #5E6B60;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .species-card {
+    background: #FAF7EF;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #E8DFD3;
+  }
+
+  .species-card:hover {
+    background: #fff;
+    border-color: #2F7D32;
+    box-shadow: 0 8px 24px rgba(47, 125, 50, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .species-image {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+    line-height: 1;
+  }
+
+  .species-card h3 {
+    color: #142016;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .species-label {
+    color: #5E6B60;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .browse-species {
+      padding: 4rem 0;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+    }
+
+    .browse-species h2 {
+      font-size: 1.5rem;
+    }
+
+    .species-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .species-card {
+      padding: 1.5rem;
+    }
+
+    .species-image {
+      font-size: 2.5rem;
+    }
+  }
+</style>
