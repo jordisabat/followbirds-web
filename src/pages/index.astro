@@ -3,12 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import HowItWorks from '../components/HowItWorks.astro';
+import StoryExperience from '../components/story/StoryExperience.astro';
+import { storyContent } from '../content/story';
 import GuidedToursAndTools from '../components/GuidedToursAndTools.astro';
 import ToursProcessFlow from '../components/ToursProcessFlow.astro';
 import ReportsAndDashboard from '../components/ReportsAndDashboard.astro';
 import FAQAndGrowth from '../components/FAQAndGrowth.astro';
 import FinalCTA from '../components/FinalCTA.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/story.css';
 
 const title = "FollowBirds — The Complete Birdwatching Companion for Portugal";
 const description = "Discover birds, explore birding hotspots, join guided tours, track sightings, and create lasting records of your birdwatching adventures.";
@@ -20,6 +23,7 @@ const description = "Discover birds, explore birding hotspots, join guided tours
   <main>
     <Hero />
     <HowItWorks />
+    <StoryExperience steps={storyContent} />
     <GuidedToursAndTools />
     <ToursProcessFlow />
     <ReportsAndDashboard />
@@ -29,3 +33,5 @@ const description = "Discover birds, explore birding hotspots, join guided tours
   
   <Footer />
 </Layout>
+
+<script src="../scripts/story-controller.ts"></script>
