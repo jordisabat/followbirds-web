@@ -1,9 +1,9 @@
 /* === Story Experience Styles === */
 
 :root {
-  --story-text-color: #5E6B60;
-  --story-heading-color: #142016;
-  --story-background-color: #FAF7EF;
+  --story-text-color: #727272;
+  --story-heading-color: #111815;
+  --story-background-color: #F4EFF6;
   --story-device-border-color: #444;
   --story-device-background: #111;
 }
@@ -69,7 +69,7 @@
 }
 
 .story-step h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Fira Sans', Georgia, serif;
   font-size: 2.75rem;
   line-height: 1.2;
   color: var(--story-heading-color);

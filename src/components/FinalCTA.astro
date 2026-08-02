@@ -6,10 +6,11 @@
   <div class="cta-background"></div>
   <div class="cta-overlay"></div>
   <div class="container cta-inner">
-    <h2>Ready for Your Next<br/>Birdwatching Adventure?</h2>
+    <h2>Become one of the first<br/>FollowBirds guides in Algarve</h2>
+    <p class="cta-subtitle">For private tours, group walks, hotel experiences and birding holidays.</p>
     <div class="cta-buttons">
-      <a href="https://followbirdsapp.web.app" class="btn btn-white" target="_blank">Open App</a>
-      <a href="#guide-program" class="btn btn-outline-white">Become a Guide</a>
+      <a href="mailto:guides@followbirds.com" class="btn btn-white">Join the Guide Program</a>
+      <a href="#reports" class="btn btn-outline-white">See Example Report</a>
     </div>
   </div>
 </section>
@@ -26,14 +27,14 @@
     position: absolute;
     inset: 0;
     background: url('/cta-flamingos.jpg') center/cover no-repeat,
-                linear-gradient(180deg, #1b5e20 0%, #0d3d0e 100%);
+                linear-gradient(180deg, #2F1737 0%, #1B5E20 100%);
     z-index: 0;
   }
 
   .cta-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(20, 32, 22, 0.65);
+    background: rgba(47, 23, 55, 0.65);
     z-index: 1;
   }
 
@@ -44,8 +45,15 @@
 
   .final-cta h2 {
     color: #fff;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
     text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+
+  .cta-subtitle {
+    color: rgba(255,255,255,0.78);
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.2);
   }
 
   .cta-buttons {
@@ -61,7 +69,7 @@
 
   .btn-white {
     background: #fff;
-    color: #2F7D32;
+    color: #559858;
     font-weight: 700;
     border-radius: 0.65rem;
     padding: 0.9rem 2rem;
@@ -70,7 +78,7 @@
   }
 
   .btn-white:hover {
-    background: #F0F9F0;
+    background: #F1F7F2;
     transform: translateY(-2px);
   }
 
