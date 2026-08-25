@@ -1,15 +1,17 @@
 ---
 // Join Guided Tours + Powerful Tools for Guides — two independent sections
+const base = import.meta.env.BASE_URL;
 ---
 
-<!-- SECTION 1: Join Guided Tours -->
+<!-- SECTION 1: Guide workspace -->
 <section id="for-guides" class="for-guides-section">
   <div class="container">
     <div class="guides-layout">
       <div class="guide-image-wrap">
         <div class="guide-image-frame">
-          <img src="/guide-birdwatching.jpg" alt="Birding guide with group" loading="lazy"
+          <img src={`${base}followbirds-guide-dashboard.png`} alt="followbirds guide workspace preview with tours, checklists, maps, and analytics" loading="lazy"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <span class="preview-badge">Guide workspace preview</span>
           <div class="guide-image-fallback">
             <div class="guide-icon">🧑‍🔭</div>
           </div>
@@ -17,32 +19,57 @@
       </div>
 
       <div class="guides-text">
-        <span class="section-label">For birding guides in Portugal</span>
-        <h2>Built for Algarve birding guides</h2>
+        <span class="section-label">For birding guides</span>
+        <h2>Spend less time after the tour.</h2>
         <p class="guides-subtitle">
-          Run better tours, record observations in real time, and give every guest a professional report.
+          We are building followbirds with guides who want a simpler way to run tours and give every guest something worth keeping.
         </p>
 
         <ul class="feature-checklist">
           <li>
             <span class="check-icon">✓</span>
-            <span>Save time after tours</span>
+            <span>Reusable tour setup</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
-            <span>Look more professional</span>
+            <span>Shared live checklist</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
-            <span>Reuse tour workflows</span>
+            <span>Client-ready follow-up</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
-            <span>Generate client-ready reports</span>
+            <span>One place for tour history</span>
           </li>
         </ul>
 
-        <a href="mailto:guides@followbirds.com" class="btn btn-primary">Join the Guide Program</a>
+        <a href="mailto:guides@followbirds.com?subject=Founding%20guide%20program" class="btn btn-primary">Apply as a founding guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: Birdwatcher app -->
+<section id="for-birdwatchers" class="for-birdwatchers-section">
+  <div class="container">
+    <div class="birdwatchers-layout">
+      <div class="birdwatchers-visual">
+        <img src={`${base}followbirds-birdwatcher-mobile.png`} alt="Two followbirds mobile app screens showing a live tour and life list" loading="lazy" />
+      </div>
+
+      <div class="birdwatchers-text">
+        <span class="section-label">The guest experience</span>
+        <h2>Give guests a better way to remember the day.</h2>
+        <p>The current followbirds app helps guests explore the Algarve, identify birds, find tracks, and keep their own checklist.</p>
+        <ul class="feature-checklist">
+          <li><span class="check-icon">✓</span><span>Offline Algarve bird catalogue</span></li>
+          <li><span class="check-icon">✓</span><span>Bird names in six languages</span></li>
+          <li><span class="check-icon">✓</span><span>Tracks, maps, and birding locations</span></li>
+          <li><span class="check-icon">✓</span><span>Nearby observations through eBird</span></li>
+          <li><span class="check-icon">✓</span><span>Personal checklists and bird history</span></li>
+        </ul>
+        <a href="https://followbirds.com/app" class="btn btn-secondary" target="_blank" rel="noreferrer">Open the current app <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </div>
@@ -51,28 +78,28 @@
 <style>
   /* ── Section 1: For Guides ── */
   .for-guides-section {
-    background: #fff;
-    padding: 5.5rem 0;
+    background: linear-gradient(135deg, rgba(228, 231, 234, 0.82), rgba(255,255,255,0.62));
+    padding: 6rem 0;
   }
 
   .guides-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 4rem;
     align-items: center;
   }
 
   .guide-image-frame {
     width: 100%;
-    aspect-ratio: 4/3;
-    border-radius: 1.25rem;
+    aspect-ratio: 18/11;
+    border-radius: 1.35rem;
     overflow: hidden;
-    background: linear-gradient(135deg, #BBD6BC 0%, #99C19B 100%);
+    background: linear-gradient(135deg, #d9dde0 0%, #9fa8b0 100%);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow);
   }
 
   .guide-image-frame img {
@@ -95,9 +122,63 @@
 
   .guide-icon { font-size: 5rem; opacity: 0.6; }
 
+  .preview-badge {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(32, 38, 44, 0.88);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .for-birdwatchers-section {
+    padding: 5.75rem 0;
+    background: rgba(235, 237, 239, 0.82);
+    overflow: hidden;
+  }
+
+  .birdwatchers-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .birdwatchers-visual {
+    position: relative;
+    min-height: 460px;
+  }
+
+  .birdwatchers-visual::before {
+    display: none;
+  }
+
+  .birdwatchers-visual img {
+    position: relative;
+    display: block;
+    width: min(100%, 660px);
+    margin: 0 auto;
+  }
+
+  .birdwatchers-text {
+    max-width: 460px;
+  }
+
+  .birdwatchers-text p {
+    max-width: 420px;
+  }
+
+  .birdwatchers-text .btn span {
+    margin-left: 0.35rem;
+  }
+
   .guides-subtitle {
     font-size: 1rem;
-    color: #727272;
+    color: var(--muted);
     line-height: 1.7;
     margin-bottom: 2rem;
   }
@@ -116,7 +197,7 @@
     gap: 0.85rem;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #111815;
+    color: var(--ink);
   }
 
   .check-icon {
@@ -125,8 +206,8 @@
     justify-content: center;
     width: 22px;
     height: 22px;
-    background: #F5F4F6;
-    color: #559858;
+    background: rgba(255,255,255,0.78);
+    color: var(--green-deep);
     border-radius: 50%;
     font-size: 0.75rem;
     font-weight: 700;
@@ -135,11 +216,14 @@
 
   /* ── Responsive ── */
   @media (max-width: 1024px) {
-    .guides-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .guides-layout,
+    .birdwatchers-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .birdwatchers-text { max-width: 600px; }
   }
 
   @media (max-width: 640px) {
-    .for-guides-section { padding: 4rem 0; }
+    .for-guides-section,
+    .for-birdwatchers-section { padding: 4rem 0; }
+    .birdwatchers-visual { min-height: 0; }
   }
 </style>
-

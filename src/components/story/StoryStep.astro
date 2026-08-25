@@ -6,13 +6,14 @@ interface Props {
 }
 const { step } = Astro.props;
 const isWelcome = step.id === 'welcome';
+const base = import.meta.env.BASE_URL;
 ---
 <section class:list={["story-step", { "is-welcome": isWelcome }]} data-step-id={step.id}>
   <div class="story-step-content">
     {step.logo && (
       <div class="story-step-logo">
-        <img src="/favicon.svg" alt="FollowBirds Logo" />
-        <span class="story-step-logo-text">FollowBirds</span>
+        <img src={`${base}favicon.svg`} alt="followbirds logo" />
+        <span class="story-step-logo-text">followbirds</span>
       </div>
     )}
     {step.headline && <h2>{step.headline}</h2>}

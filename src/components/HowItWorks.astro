@@ -1,84 +1,87 @@
 ---
-// What is FollowBirds Section
+// What is Followbirds Section
 ---
 
 <section id="what-is-followbirds" class="what-is-followbirds section">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">What is FollowBirds</span>
-      <h2>Everything You Need for<br/>Birdwatching in One Place</h2>
+      <span class="section-label">The guide workflow</span>
+      <h2>Simple for you. Memorable for guests.</h2>
       <p class="section-subtitle">
-        Whether you're exploring on your own or joining a guided tour, FollowBirds helps you discover birds, explore birding destinations, build your life list, and keep track of every observation.
+        We are building the essential tools around the moments that make a great birding tour.
       </p>
     </div>
 
     <div class="feature-grid">
       <div class="feature-card">
+        <span class="step-number">01</span>
         <div class="feature-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
             <circle cx="9" cy="7" r="4"/>
             <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
         </div>
-        <span>Tours</span>
+        <div>
+          <h3>Create a tour</h3>
+          <p>Set up the route, checklist, and guest details before you leave.</p>
+        </div>
       </div>
 
       <div class="feature-card">
+        <span class="step-number">02</span>
         <div class="feature-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
             <polyline points="9 11 12 14 22 4"/>
             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
           </svg>
         </div>
-        <span>Live<br/>Checklists</span>
+        <div>
+          <h3>Share observations</h3>
+          <p>Record each sighting once while guests follow the same shared experience.</p>
+        </div>
       </div>
 
       <div class="feature-card">
+        <span class="step-number">03</span>
         <div class="feature-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
             <circle cx="12" cy="10" r="3"/>
           </svg>
         </div>
-        <span>Birding<br/>Locations</span>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <polyline points="10 9 9 9 8 9"/>
-          </svg>
+        <div>
+          <h3>Send the follow-up</h3>
+          <p>Turn the day into a polished summary guests can revisit and share.</p>
         </div>
-        <span>Reports</span>
       </div>
     </div>
+
+    <a class="section-link" href="mailto:guides@followbirds.com?subject=Founding%20guide%20program">Apply as a founding guide <span aria-hidden="true">→</span></a>
   </div>
 </section>
 
 <style>
   .what-is-followbirds {
-    background-color: #fff;
-    padding: 5.5rem 0;
+    background: rgba(255, 255, 255, 0.66);
+    padding: 5.75rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
   }
 
   .section-header {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
   }
 
   .what-is-followbirds h2 {
-    color: #111815;
+    color: var(--ink);
     margin-bottom: 1rem;
   }
 
   .section-subtitle {
     font-size: 1rem;
-    color: #727272;
+    color: var(--muted);
     max-width: 680px;
     margin-left: auto;
     margin-right: auto;
@@ -88,64 +91,98 @@
 
   .feature-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
   .feature-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.85rem;
-    padding: 1.75rem 1rem;
-    background: #F4EFF6;
-    border-radius: 1rem;
-    border: 1px solid #D1D3C8;
-    text-align: center;
+    position: relative;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 1.1rem;
+    border: 1px solid var(--line);
+    text-align: left;
     transition: all 0.25s ease;
     cursor: default;
   }
 
   .feature-card:hover {
-    border-color: #559858;
+    border-color: rgba(35, 40, 46, 0.32);
     background: #fff;
-    box-shadow: 0 6px 20px rgba(47,125,50,0.1);
+    box-shadow: var(--shadow);
     transform: translateY(-3px);
   }
 
   .feature-icon-wrap {
-    width: 52px;
-    height: 52px;
-    background: #F5F4F6;
+    width: 48px;
+    height: 48px;
+    background: var(--green-soft);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #559858;
+    color: var(--green-deep);
     flex-shrink: 0;
     transition: background 0.25s ease;
   }
 
   .feature-card:hover .feature-icon-wrap {
-    background: #559858;
+    background: var(--green);
     color: #fff;
   }
 
-  .feature-card span {
-    font-size: 0.82rem;
+  .feature-card h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.08rem;
+  }
+
+  .feature-card p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .step-number {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.25rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    color: #111815;
-    line-height: 1.4;
+    letter-spacing: 0.12em;
+    color: var(--green);
+  }
+
+  .section-link {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0;
+    color: var(--green-deep);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .section-link span {
+    margin-left: 0.4rem;
+    transition: margin-left 0.2s ease;
+  }
+
+  .section-link:hover span {
+    margin-left: 0.7rem;
   }
 
   @media (max-width: 768px) {
     .feature-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 0.85rem;
     }
 
     .feature-card {
-      padding: 1.25rem 0.75rem;
+      padding: 1.5rem;
     }
 
     .feature-icon-wrap {

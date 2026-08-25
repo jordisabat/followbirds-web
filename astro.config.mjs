@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://jordisabat.github.io/followbirds-web/',
-  base: '/followbirds-web/',
+  site: 'https://followbirds.com',
+  base: '/',
 });

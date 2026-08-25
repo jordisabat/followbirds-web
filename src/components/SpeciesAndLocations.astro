@@ -1,5 +1,6 @@
 ---
 // Browse Species + Birding Locations — two independent sections
+const base = import.meta.env.BASE_URL;
 ---
 
 <!-- SECTION 1: Browse Species -->
@@ -16,7 +17,7 @@
     <div class="species-grid">
       <div class="species-card">
         <div class="species-photo">
-          <img src="/species-iberian-magpie.jpg" alt="Iberian Magpie" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <img src={`${base}species-iberian-magpie.jpg`} alt="Iberian Magpie" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           <div class="species-fallback">🐦</div>
         </div>
         <div class="species-info">
@@ -27,7 +28,7 @@
 
       <div class="species-card">
         <div class="species-photo">
-          <img src="/species-greater-flamingo.jpg" alt="Greater Flamingo" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <img src={`${base}species-greater-flamingo.jpg`} alt="Greater Flamingo" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           <div class="species-fallback">🦢</div>
         </div>
         <div class="species-info">
@@ -38,7 +39,7 @@
 
       <div class="species-card">
         <div class="species-photo">
-          <img src="/species-european-bee-eater.jpg" alt="European Bee-eater" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <img src={`${base}species-european-bee-eater.jpg`} alt="European Bee-eater" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           <div class="species-fallback">🐦</div>
         </div>
         <div class="species-info">
@@ -49,7 +50,7 @@
 
       <div class="species-card">
         <div class="species-photo">
-          <img src="/species-little-egret.jpg" alt="Little Egret" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <img src={`${base}species-little-egret.jpg`} alt="Little Egret" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           <div class="species-fallback">🦅</div>
         </div>
         <div class="species-info">
@@ -60,7 +61,7 @@
 
       <div class="species-card">
         <div class="species-photo">
-          <img src="/species-black-winged-stilt.jpg" alt="Black-winged Stilt" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <img src={`${base}species-black-winged-stilt.jpg`} alt="Black-winged Stilt" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           <div class="species-fallback">🦆</div>
         </div>
         <div class="species-info">
@@ -71,7 +72,7 @@
 
       <div class="species-card">
         <div class="species-photo">
-          <img src="/species-zitting-cisticola.jpg" alt="Zitting Cisticola" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          <img src={`${base}species-zitting-cisticola.jpg`} alt="Zitting Cisticola" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           <div class="species-fallback">🐦</div>
         </div>
         <div class="species-info">
@@ -122,7 +123,7 @@
 
       <div class="locations-map">
         <div class="map-frame">
-          <img src="/algarve-map.jpg" alt="Algarve birding locations map" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <img src={`${base}algarve-map.jpg`} alt="Algarve birding locations map" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
           <div class="map-placeholder-art">
             <div class="map-art-inner">
               <div class="map-dot dot-1"></div>
@@ -384,7 +385,7 @@
       <div class="species-grid">
         <div class="species-card">
           <div class="species-photo">
-            <img src="/species-iberian-magpie.jpg" alt="Iberian Magpie" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src={`${base}species-iberian-magpie.jpg`} alt="Iberian Magpie" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
             <div class="species-fallback">🐦</div>
           </div>
           <div class="species-info">
@@ -395,7 +396,7 @@
 
         <div class="species-card">
           <div class="species-photo">
-            <img src="/species-greater-flamingo.jpg" alt="Greater Flamingo" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src={`${base}species-greater-flamingo.jpg`} alt="Greater Flamingo" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
             <div class="species-fallback">🦢</div>
           </div>
           <div class="species-info">
@@ -406,7 +407,7 @@
 
         <div class="species-card">
           <div class="species-photo">
-            <img src="/species-european-bee-eater.jpg" alt="European Bee-eater" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src={`${base}species-european-bee-eater.jpg`} alt="European Bee-eater" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
             <div class="species-fallback">🐦</div>
           </div>
           <div class="species-info">
@@ -417,7 +418,7 @@
 
         <div class="species-card">
           <div class="species-photo">
-            <img src="/species-little-egret.jpg" alt="Little Egret" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src={`${base}species-little-egret.jpg`} alt="Little Egret" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
             <div class="species-fallback">🦅</div>
           </div>
           <div class="species-info">
@@ -428,7 +429,7 @@
 
         <div class="species-card">
           <div class="species-photo">
-            <img src="/species-black-winged-stilt.jpg" alt="Black-winged Stilt" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src={`${base}species-black-winged-stilt.jpg`} alt="Black-winged Stilt" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
             <div class="species-fallback">🦆</div>
           </div>
           <div class="species-info">
@@ -439,7 +440,7 @@
 
         <div class="species-card">
           <div class="species-photo">
-            <img src="/species-zitting-cisticola.jpg" alt="Zitting Cisticola" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src={`${base}species-zitting-cisticola.jpg`} alt="Zitting Cisticola" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
             <div class="species-fallback">🐦</div>
           </div>
           <div class="species-info">
@@ -469,7 +470,7 @@
 
       <div class="map-container">
         <div class="map-frame">
-          <img src="/algarve-map.jpg" alt="Algarve birding locations map" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <img src={`${base}algarve-map.jpg`} alt="Algarve birding locations map" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
           <div class="map-placeholder-art">
             <div class="map-art-inner">
               <div class="map-dot dot-1"></div>

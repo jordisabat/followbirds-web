@@ -6,28 +6,27 @@
   <div class="container">
     <div class="reports-layout">
       <div class="reports-text">
-        <span class="section-label">Every tour becomes a lasting record</span>
-        <h2>Every tour becomes a report</h2>
+        <span class="section-label">Planned guide output</span>
+        <h2>Turn a day outside into something worth keeping.</h2>
         <p class="reports-subtitle">
-          FollowBirds turns observations, species, photos and route data into a shareable web/PDF report — ready for every participant.
+          The planned followbirds report will bring together species, route, photos, notes, and guest memories in one shareable follow-up.
         </p>
 
         <ul class="reports-features">
           <li><span class="check-icon">✓</span>Tour details and route</li>
-          <li><span class="check-icon">✓</span>Species list and counts</li>
+          <li><span class="check-icon">✓</span>Species and sightings</li>
           <li><span class="check-icon">✓</span>Photos and guide notes</li>
-          <li><span class="check-icon">✓</span>PDF / web link</li>
+          <li><span class="check-icon">✓</span>Shareable guest summary</li>
         </ul>
 
-        <a href="#" class="btn btn-secondary">See Example Report</a>
       </div>
 
       <div class="reports-visual">
         <div class="report-card">
           <div class="report-card-header">
             <div class="report-tour-info">
-              <div class="report-tour-name">Ria Formosa: Winter Birds Tour</div>
-              <div class="report-meta">Guide: João · Dec 18, 2024 · 18°C</div>
+              <div class="report-tour-name">Example report preview</div>
+              <div class="report-meta">Ria Formosa · A planned followbirds guide output</div>
             </div>
             <div class="report-stats-row">
               <div class="report-stat">
@@ -57,7 +56,7 @@
             <div class="report-output">
               <span class="output-badge pdf">📄 PDF Export</span>
               <span class="output-badge link">🔗 Shareable Link</span>
-              <span class="output-badge history">📖 FollowBirds History</span>
+              <span class="output-badge history">📖 followbirds History</span>
             </div>
           </div>
         </div>
@@ -68,8 +67,8 @@
 
 <style>
   .reports-section {
-    background: #F4EFF6;
-    padding: 5.5rem 0;
+    background: rgba(255, 255, 255, 0.68);
+    padding: 6rem 0;
   }
 
   .reports-layout {
@@ -81,7 +80,7 @@
 
   .reports-subtitle {
     font-size: 1rem;
-    color: #727272;
+    color: var(--muted);
     line-height: 1.7;
     margin-bottom: 1.5rem;
     max-width: 480px;
@@ -100,7 +99,7 @@
     align-items: center;
     gap: 0.7rem;
     font-size: 0.9rem;
-    color: #111815;
+    color: var(--ink);
     font-weight: 500;
   }
 
@@ -110,8 +109,8 @@
     justify-content: center;
     width: 20px;
     height: 20px;
-    background: #F5F4F6;
-    color: #559858;
+    background: var(--green-soft);
+    color: var(--green-deep);
     border-radius: 50%;
     font-size: 0.7rem;
     font-weight: 700;
@@ -121,27 +120,27 @@
   /* ── Report Card ── */
   .report-card {
     background: #fff;
-    border: 1px solid #D1D3C8;
+    border: 1px solid var(--line);
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    box-shadow: var(--shadow);
   }
 
   .report-card-header {
     padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid #D1D3C8;
+    border-bottom: 1px solid var(--line);
   }
 
   .report-tour-name {
     font-weight: 700;
     font-size: 0.95rem;
-    color: #111815;
+    color: var(--ink);
     margin-bottom: 0.25rem;
   }
 
   .report-meta {
     font-size: 0.78rem;
-    color: #727272;
+    color: var(--muted);
   }
 
   .report-stats-row {
@@ -158,13 +157,13 @@
   .stat-num {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #559858;
+    color: var(--green);
     line-height: 1;
   }
 
   .stat-lbl {
     font-size: 0.72rem;
-    color: #727272;
+    color: var(--muted);
     margin-top: 0.2rem;
   }
 
@@ -190,7 +189,7 @@
 
   .report-item {
     font-size: 0.8rem;
-    color: #111815;
+    color: var(--ink);
     display: flex;
     align-items: center;
     gap: 0.4rem;
@@ -201,7 +200,7 @@
     gap: 0.5rem;
     flex-wrap: wrap;
     padding-top: 0.75rem;
-    border-top: 1px solid #D1D3C8;
+    border-top: 1px solid var(--line);
   }
 
   .output-badge {
@@ -209,8 +208,8 @@
     padding: 0.3rem 0.6rem;
     border-radius: 0.35rem;
     font-weight: 500;
-    background: #F5F4F6;
-    color: #559858;
+    background: var(--green-soft);
+    color: var(--green-deep);
   }
 
   /* ── Responsive ── */

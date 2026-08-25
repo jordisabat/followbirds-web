@@ -6,11 +6,11 @@
   <div class="cta-background"></div>
   <div class="cta-overlay"></div>
   <div class="container cta-inner">
-    <h2>Become one of the first<br/>FollowBirds guides in Algarve</h2>
-    <p class="cta-subtitle">For private tours, group walks, hotel experiences and birding holidays.</p>
+    <h2>Help shape the first<br/>followbirds guide workspace.</h2>
+    <p class="cta-subtitle">Join the founding guide program and help us build around the way you really run tours.</p>
     <div class="cta-buttons">
-      <a href="mailto:guides@followbirds.com" class="btn btn-white">Join the Guide Program</a>
-      <a href="#reports" class="btn btn-outline-white">See Example Report</a>
+      <a href="mailto:guides@followbirds.com?subject=Founding%20guide%20program" class="btn btn-white">Apply as a founding guide</a>
+      <a href="https://followbirds.com/app" class="btn btn-outline-white" target="_blank" rel="noreferrer">Open the current app</a>
     </div>
   </div>
 </section>
@@ -26,15 +26,16 @@
   .cta-background {
     position: absolute;
     inset: 0;
-    background: url('/cta-flamingos.jpg') center/cover no-repeat,
-                linear-gradient(180deg, #2F1737 0%, #1B5E20 100%);
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.92), transparent 34%),
+      linear-gradient(135deg, #e4e7e9 0%, #f8f8f8 100%);
     z-index: 0;
   }
 
   .cta-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(47, 23, 55, 0.65);
+    background: rgba(255, 255, 255, 0.18);
     z-index: 1;
   }
 
@@ -44,16 +45,14 @@
   }
 
   .final-cta h2 {
-    color: #fff;
+    color: var(--ink);
     margin-bottom: 1.25rem;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
   }
 
   .cta-subtitle {
-    color: rgba(255,255,255,0.78);
+    color: var(--muted);
     font-size: 1.05rem;
     margin-bottom: 2.5rem;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.2);
   }
 
   .cta-buttons {
@@ -68,8 +67,8 @@
   }
 
   .btn-white {
-    background: #fff;
-    color: #559858;
+    background: var(--green-deep);
+    color: #fff;
     font-weight: 700;
     border-radius: 0.65rem;
     padding: 0.9rem 2rem;
@@ -78,14 +77,14 @@
   }
 
   .btn-white:hover {
-    background: #F1F7F2;
+    background: var(--green);
     transform: translateY(-2px);
   }
 
   .btn-outline-white {
     background: transparent;
-    color: #fff;
-    border: 2px solid rgba(255,255,255,0.7);
+    color: var(--purple);
+    border: 2px solid rgba(47,23,55,0.28);
     font-weight: 600;
     border-radius: 0.65rem;
     padding: 0.9rem 2rem;
@@ -94,8 +93,8 @@
   }
 
   .btn-outline-white:hover {
-    background: rgba(255,255,255,0.12);
-    border-color: #fff;
+    background: rgba(255,255,255,0.7);
+    border-color: var(--purple);
   }
 
   @media (max-width: 768px) {

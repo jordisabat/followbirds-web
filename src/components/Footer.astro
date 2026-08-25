@@ -1,5 +1,6 @@
 ---
 // Footer Component
+const base = import.meta.env.BASE_URL;
 ---
 
 <footer class="footer">
@@ -7,9 +8,8 @@
     <div class="footer-top">
       <!-- Logo + tagline -->
       <div class="footer-brand">
-        <a href="/" class="footer-logo">
-          <span class="footer-logo-icon">🦅</span>
-          <span class="footer-logo-text">FollowBirds</span>
+        <a href={base} class="footer-logo">
+          <img src={`${base}brand/followbirds-horizontal-white.svg`} alt="followbirds" />
         </a>
         <p class="footer-tagline">The complete birdwatching companion<br/>for Portugal.</p>
       </div>
@@ -17,40 +17,29 @@
       <!-- Links -->
       <div class="footer-links">
         <div class="footer-column">
-          <h4>Features</h4>
+          <h4>Explore</h4>
           <ul>
-            <li><a href="#what-is-followbirds">Bird Discovery</a></li>
-            <li><a href="#browse-species">Bird Library</a></li>
-            <li><a href="#birding-locations">Birding Locations</a></li>
-            <li><a href="#tours-process">Guided Tours</a></li>
-            <li><a href="#reports">Tour Reports</a></li>
+            <li><a href="#what-is-followbirds">How it works</a></li>
+            <li><a href="#for-birdwatchers">For birdwatchers</a></li>
+            <li><a href="#reports">Tour reports</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
           <h4>For Guides</h4>
           <ul>
-            <li><a href="#guide-program">Guide Program</a></li>
-            <li><a href="#dashboard-overview">Dashboard</a></li>
-            <li><a href="mailto:guides@followbirds.com">Contact Us</a></li>
+            <li><a href="#for-guides">Guide workspace</a></li>
+            <li><a href="mailto:guides@followbirds.com">Join the program</a></li>
+            <li><a href="https://followbirds.com/app" target="_blank" rel="noreferrer">Open the web app</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
-          <h4>FAQ</h4>
+          <h4>Support</h4>
           <ul>
-            <li><a href="#faq-growth">How it works</a></li>
-            <li><a href="#faq-growth">For birdwatchers</a></li>
-            <li><a href="#faq-growth">For guides</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="/privacy.html">Privacy Policy</a></li>
-            <li><a href="/terms.html">Terms of Use</a></li>
-            <li><a href="mailto:hello@followbirds.com">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="mailto:hello@followbirds.com">Contact us</a></li>
+            <li><a href={`${base}privacy.html`}>Privacy policy</a></li>
           </ul>
         </div>
       </div>
@@ -58,38 +47,15 @@
 
     <div class="footer-bottom">
       <p class="footer-copyright">
-        © {new Date().getFullYear()} FollowBirds. All rights reserved.
+        © {new Date().getFullYear()} followbirds. All rights reserved.
       </p>
-      <div class="social-links">
-        <!-- Instagram -->
-        <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-          </svg>
-        </a>
-        <!-- Facebook -->
-        <a href="#" class="social-link" aria-label="Facebook" title="Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-          </svg>
-        </a>
-        <!-- YouTube -->
-        <a href="#" class="social-link" aria-label="YouTube" title="YouTube">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
-            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
-          </svg>
-        </a>
-      </div>
     </div>
   </div>
 </footer>
 
 <style>
   .footer {
-    background-color: #111815;
+    background: linear-gradient(135deg, #2b3036 0%, #15181c 100%);
     color: #fff;
     padding: 4rem 0 2rem;
   }
@@ -113,24 +79,18 @@
   .footer-logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     text-decoration: none;
   }
 
-  .footer-logo-icon {
-    font-size: 1.5rem;
-  }
-
-  .footer-logo-text {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: -0.01em;
+  .footer-logo img {
+    display: block;
+    width: 142px;
+    height: auto;
   }
 
   .footer-tagline {
     font-size: 0.85rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.62);
     line-height: 1.6;
     margin: 0;
   }
@@ -138,7 +98,7 @@
   /* Links grid */
   .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
@@ -238,7 +198,7 @@
 
 <style>
   .footer {
-    background-color: #111815;
+    background-color: #15181c;
     color: #fff;
     padding: 4rem 0 2rem;
   }
