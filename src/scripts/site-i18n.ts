@@ -138,8 +138,8 @@ Object.assign(translations.pt, {
   'Any birding professional or enthusiastic guide who leads tours in Portugal can apply. Email': 'Qualquer profissional de observação ou guia entusiasta que organize passeios em Portugal pode candidatar-se. Envie um email para',
   'Explore': 'Explorar', 'For birdwatchers': 'Para observadores', 'Tour reports': 'Relatórios de passeios', 'Guide workspace': 'Espaço de trabalho do guia', 'Join the program': 'Junte-se ao programa', 'Open the web app': 'Abrir a aplicação web', 'Support': 'Apoio', 'Contact us': 'Contacte-nos', 'Privacy policy': 'Política de privacidade'
   , 'The complete birdwatching companion': 'O companheiro completo para a observação de aves', 'for Portugal.': 'para Portugal.'
-  , 'Example report preview': 'Pré-visualização de relatório', 'Ria Formosa · A planned followbirds guide output': 'Ria Formosa · Um resultado planeado para guias followbirds'
-  , 'Species Observed': 'Espécies observadas', 'Participants': 'Participantes', 'Includes:': 'Inclui:', 'Tour details': 'Detalhes do passeio', 'Guide & date': 'Guia e data', 'Route map': 'Mapa da rota', 'Species observed': 'Espécies observadas', 'Photos': 'Fotografias', 'Guide notes': 'Notas do guia', 'Weather conditions': 'Condições meteorológicas', '📄 PDF Export': '📄 Exportação PDF', '🔗 Shareable Link': '🔗 Ligação partilhável', '📖 followbirds History': '📖 Histórico followbirds'
+  , 'Example report preview': 'Pré-visualização de relatório', 'Ria Formosa · A planned Followbirds guide output': 'Ria Formosa · Um resultado planeado para guias Followbirds'
+  , 'Species Observed': 'Espécies observadas', 'Participants': 'Participantes', 'Includes:': 'Inclui:', 'Tour details': 'Detalhes do passeio', 'Guide & date': 'Guia e data', 'Route map': 'Mapa da rota', 'Species observed': 'Espécies observadas', 'Photos': 'Fotografias', 'Guide notes': 'Notas do guia', 'Weather conditions': 'Condições meteorológicas', '📄 PDF Export': '📄 Exportação PDF', '🔗 Shareable Link': '🔗 Ligação partilhável', '📖 Followbirds History': '📖 Histórico Followbirds'
 });
 
 Object.assign(translations.es, {
@@ -164,8 +164,8 @@ Object.assign(translations.es, {
   'Any birding professional or enthusiastic guide who leads tours in Portugal can apply. Email': 'Cualquier profesional de la observación o guía entusiasta que organice rutas en Portugal puede solicitarlo. Escribe a',
   'Explore': 'Explorar', 'For birdwatchers': 'Para observadores', 'Tour reports': 'Informes de rutas', 'Guide workspace': 'Espacio de trabajo del guía', 'Join the program': 'Únete al programa', 'Open the web app': 'Abrir la aplicación web', 'Support': 'Ayuda', 'Contact us': 'Contacta con nosotros', 'Privacy policy': 'Política de privacidad'
   , 'The complete birdwatching companion': 'El compañero completo para la observación de aves', 'for Portugal.': 'para Portugal.'
-  , 'Example report preview': 'Vista previa del informe', 'Ria Formosa · A planned followbirds guide output': 'Ria Formosa · Un resultado previsto para guías de followbirds'
-  , 'Species Observed': 'Especies observadas', 'Participants': 'Participantes', 'Includes:': 'Incluye:', 'Tour details': 'Detalles de la ruta', 'Guide & date': 'Guía y fecha', 'Route map': 'Mapa de la ruta', 'Species observed': 'Especies observadas', 'Photos': 'Fotos', 'Guide notes': 'Notas del guía', 'Weather conditions': 'Condiciones meteorológicas', '📄 PDF Export': '📄 Exportación PDF', '🔗 Shareable Link': '🔗 Enlace compartible', '📖 followbirds History': '📖 Historial de followbirds'
+  , 'Example report preview': 'Vista previa del informe', 'Ria Formosa · A planned Followbirds guide output': 'Ria Formosa · Un resultado previsto para guías de Followbirds'
+  , 'Species Observed': 'Especies observadas', 'Participants': 'Participantes', 'Includes:': 'Incluye:', 'Tour details': 'Detalles de la ruta', 'Guide & date': 'Guía y fecha', 'Route map': 'Mapa de la ruta', 'Species observed': 'Especies observadas', 'Photos': 'Fotos', 'Guide notes': 'Notas del guía', 'Weather conditions': 'Condiciones meteorológicas', '📄 PDF Export': '📄 Exportación PDF', '🔗 Shareable Link': '🔗 Enlace compartible', '📖 Followbirds History': '📖 Historial de Followbirds'
 });
 
 Object.assign(translations.ca, {
@@ -190,8 +190,8 @@ Object.assign(translations.ca, {
   'Any birding professional or enthusiastic guide who leads tours in Portugal can apply. Email': 'Qualsevol professional de l’observació o guia entusiasta que organitzi sortides a Portugal s’hi pot presentar. Escriu a',
   'Explore': 'Explora', 'For birdwatchers': 'Per a observadors', 'Tour reports': 'Informes de sortides', 'Guide workspace': 'Espai de treball del guia', 'Join the program': 'Uneix-te al programa', 'Open the web app': 'Obre l’aplicació web', 'Support': 'Ajuda', 'Contact us': 'Contacta amb nosaltres', 'Privacy policy': 'Política de privacitat'
   , 'The complete birdwatching companion': 'El company complet per a l’observació d’aus a Portugal.', 'for Portugal.': ''
-  , 'Example report preview': 'Previsualització de l’informe', 'Ria Formosa · A planned followbirds guide output': 'Ria Formosa · Un resultat previst per a guies de followbirds'
-  , 'Species Observed': 'Espècies observades', 'Participants': 'Participants', 'Includes:': 'Inclou:', 'Tour details': 'Detalls de la sortida', 'Guide & date': 'Guia i data', 'Route map': 'Mapa de la ruta', 'Species observed': 'Espècies observades', 'Photos': 'Fotografies', 'Guide notes': 'Notes del guia', 'Weather conditions': 'Condicions meteorològiques', '📄 PDF Export': '📄 Exportació PDF', '🔗 Shareable Link': '🔗 Enllaç compartible', '📖 followbirds History': '📖 Historial de followbirds'
+  , 'Example report preview': 'Previsualització de l’informe', 'Ria Formosa · A planned Followbirds guide output': 'Ria Formosa · Un resultat previst per a guies de Followbirds'
+  , 'Species Observed': 'Espècies observades', 'Participants': 'Participants', 'Includes:': 'Inclou:', 'Tour details': 'Detalls de la sortida', 'Guide & date': 'Guia i data', 'Route map': 'Mapa de la ruta', 'Species observed': 'Espècies observades', 'Photos': 'Fotografies', 'Guide notes': 'Notes del guia', 'Weather conditions': 'Condicions meteorològiques', '📄 PDF Export': '📄 Exportació PDF', '🔗 Shareable Link': '🔗 Enllaç compartible', '📖 Followbirds History': '📖 Historial de Followbirds'
 });
 
 function translate(locale: Locale) {
@@ -207,8 +207,7 @@ function translate(locale: Locale) {
     const key = original.trim();
     const translated = locale === 'en'
       ? key
-      : (translations[locale][key] ?? translations[locale][key.replaceAll('followbirds', 'Followbirds')])
-        ?.replaceAll('Followbirds', 'followbirds');
+      : (translations[locale][key] ?? translations[locale][key.replaceAll('Followbirds', 'followbirds')]);
     if (translated === undefined) continue;
 
     originalText.set(node, original);
