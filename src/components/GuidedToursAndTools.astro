@@ -11,7 +11,7 @@ const base = import.meta.env.BASE_URL;
         <div class="guide-image-frame">
           <img src={`${base}followbirds-guide-dashboard.png`} alt="Followbirds guide workspace preview with tours, checklists, maps, and analytics" loading="lazy"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
-          <span class="preview-badge">Guide workspace preview</span>
+          <span class="preview-badge">Planned: guide workspace</span>
           <div class="guide-image-fallback">
             <div class="guide-icon">🧑‍🔭</div>
           </div>
@@ -24,6 +24,8 @@ const base = import.meta.env.BASE_URL;
         <p class="guides-subtitle">
           We are building Followbirds with guides who want a simpler way to run tours and give every guest something worth keeping.
         </p>
+
+        <span class="planned-badge">Planned</span>
 
         <ul class="feature-checklist">
           <li>
@@ -181,6 +183,19 @@ const base = import.meta.env.BASE_URL;
     color: var(--muted);
     line-height: 1.7;
     margin-bottom: 2rem;
+  }
+
+  .planned-badge {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    border: 1px dashed var(--green-deep);
+    color: var(--green-deep);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 
   .feature-checklist {

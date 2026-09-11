@@ -194,6 +194,24 @@ Object.assign(translations.ca, {
   , 'Species Observed': 'Espècies observades', 'Participants': 'Participants', 'Includes:': 'Inclou:', 'Tour details': 'Detalls de la sortida', 'Guide & date': 'Guia i data', 'Route map': 'Mapa de la ruta', 'Species observed': 'Espècies observades', 'Photos': 'Fotografies', 'Guide notes': 'Notes del guia', 'Weather conditions': 'Condicions meteorològiques', '📄 PDF Export': '📄 Exportació PDF', '🔗 Shareable Link': '🔗 Enllaç compartible', '📖 Followbirds History': '📖 Historial de Followbirds'
 });
 
+Object.assign(translations.pt, {
+  'Guide workspace and Tour Reports are in development, not available yet. Founding guides help shape the first release. The live product today is the Algarve birdwatcher app.': 'O espaço de trabalho do guia e os Relatórios de Passeio estão em desenvolvimento e ainda não estão disponíveis. Os guias fundadores ajudam a definir a primeira versão. O produto disponível hoje é a aplicação para observadores do Algarve.',
+  'Planned': 'Planeado',
+  'Planned: guide workspace': 'Planeado: espaço de trabalho do guia'
+});
+
+Object.assign(translations.es, {
+  'Guide workspace and Tour Reports are in development, not available yet. Founding guides help shape the first release. The live product today is the Algarve birdwatcher app.': 'El espacio de trabajo del guía y los Informes de Ruta están en desarrollo y aún no están disponibles. Los guías fundadores ayudan a definir la primera versión. El producto disponible hoy es la aplicación para observadores del Algarve.',
+  'Planned': 'Previsto',
+  'Planned: guide workspace': 'Previsto: espacio de trabajo del guía'
+});
+
+Object.assign(translations.ca, {
+  'Guide workspace and Tour Reports are in development, not available yet. Founding guides help shape the first release. The live product today is the Algarve birdwatcher app.': 'L\'espai de treball del guia i els Informes de Sortida estan en desenvolupament i encara no estan disponibles. Els guies fundadors ajuden a definir la primera versió. El producte disponible avui és l\'aplicació per a observadors de l\'Algarve.',
+  'Planned': 'Previst',
+  'Planned: guide workspace': 'Previst: espai de treball del guia'
+});
+
 function translate(locale: Locale) {
   document.documentElement.lang = locale;
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);

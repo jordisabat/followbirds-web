@@ -24,7 +24,7 @@
         <div class="report-card">
           <div class="report-card-header">
             <div class="report-tour-info">
-              <div class="report-tour-name">Example report preview</div>
+              <div class="report-tour-name">Example report preview <span class="planned-badge">Planned</span></div>
               <div class="report-meta">Ria Formosa · A planned Followbirds guide output</div>
             </div>
             <div class="report-stats-row">
@@ -53,6 +53,7 @@
             </div>
 
             <div class="report-output">
+              <span class="output-badge planned">Planned</span>
               <span class="output-badge pdf">📄 PDF Export</span>
               <span class="output-badge link">🔗 Shareable Link</span>
               <span class="output-badge history">📖 Followbirds History</span>
@@ -137,6 +138,20 @@
     margin-bottom: 0.25rem;
   }
 
+  .planned-badge {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    border: 1px dashed var(--green-deep);
+    color: var(--green-deep);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
   .report-meta {
     font-size: 0.78rem;
     color: var(--muted);
@@ -209,6 +224,12 @@
     font-weight: 500;
     background: var(--green-soft);
     color: var(--green-deep);
+  }
+
+  .output-badge.planned {
+    background: #fff;
+    border: 1px dashed var(--green-deep);
+    font-weight: 700;
   }
 
   /* ── Responsive ── */
